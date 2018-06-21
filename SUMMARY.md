@@ -16,6 +16,7 @@
   * [latex](kinno/latex.md)
   * [set up Linux environment on VMWare](kinno/set-up-linux-environment-on-vmware.md)
   * [git](kinno/git.md)
+  * [testpage](kinno/testpage.md)
 * [Nagabuchi](nagabuchi/README.md)
   * [固い絆に想いを寄せてビーコン](nagabuchi/iniiwosetebkon.md)
   * [もしもの時のMacでApache2](nagabuchi/moshimononomacdeapache2.md)
