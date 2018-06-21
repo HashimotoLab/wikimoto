@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)http://tsutawarudesign.com/ -->
+<html class=""><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script type="text/javascript" async="" src="./伝わるデザイン｜研究発表のユニバーサルデザイン_files/analytics.js"></script><script async="" src="./伝わるデザイン｜研究発表のユニバーサルデザイン_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108126852-1');
+</script>
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="情報の伝わりやすさは「資料の作り方」に大きく左右されます。本ページでは、伝わる資料を作るためのデザインルールやテクニックを紹介します。">
+<meta name="keywords" content="プレゼン資料,作り方,資料作成,デザイン,レイアウト,Word,ワード,PowerPoint,プレゼンテーション,パワポ,Excel,エクセル,グラフ,配色,バリアフリー">
+<title>伝わるデザイン｜研究発表のユニバーサルデザイン</title>
+<link href="./伝わるデザイン｜研究発表のユニバーサルデザイン_files/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="./伝わるデザイン｜研究発表のユニバーサルデザイン_files/style.css" rel="stylesheet" type="text/css">
+<link href="./伝わるデザイン｜研究発表のユニバーサルデザイン_files/sawarabimincho.css" rel="stylesheet">
+<script type="text/javascript" src="./伝わるデザイン｜研究発表のユニバーサルデザイン_files/jquery.min.js"></script>
+<!-- 
+ファイルの先頭の HTML タグを囲む条件付きコメントの詳細については、以下を参照 : 
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Modernizr (http://www.modernizr.com/) のカスタマイズされたビルドを使用している場合は、以下を実行 : 
+* js へのリンクをここに挿入
+* html5shiv への以下のリンクを削除
+* 先頭の html タグに「js 以外の」クラスを追加
+* Modernizr ビルドに MQ Polyfill を含めた場合は、respond.min.js へのリンクも削除可能 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<link href="./伝わるデザイン｜研究発表のユニバーサルデザイン_files/all.css" rel="stylesheet">
+<script src="./伝わるデザイン｜研究発表のユニバーサルデザイン_files/respond.min.js"></script>
+<script src="./伝わるデザイン｜研究発表のユニバーサルデザイン_files/TweenMax.min.js"></script>
+<script src="./伝わるデザイン｜研究発表のユニバーサルデザイン_files/jquery.min(1).js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+$("#logo").load("./header.html #logo");
+$("#header").load("./header.html #header");
+$("#footer").load("./header.html #footer");
+$("#menu").load("./header.html #menu");
+$("#af").load("./header.html #af");
+$("#social").load("./header.html #social");
+})
+</script>
+
+
+<script src="./伝わるデザイン｜研究発表のユニバーサルデザイン_files/jquery.min(2).js"></script>
+
+<script type="text/javascript">
+// PC用のサイドバー固定
+(function(){
+	 $(function(){
+
+		 var fix = $('#pc-side-nav'), //固定したいコンテンツ
+		 side = $('.sidebar'), //サイドバーのID
+		 main = $('#LayoutDiv1'), //固定する要素を収める範囲
+		 sideTop = side.offset().top;
+		 fixTop = fix.offset().top,
+		 mainTop = main.offset().top,
+		 w = $(window);
+
+		 var adjust = function(){
+			 fixTop = fix.css('position') === 'static' ? sideTop + fix.position().top : fixTop;
+			 var fixHeight = fix.outerHeight(true),
+			 mainHeight = main.outerHeight(),
+			 winTop = w.scrollTop();
+
+			 if(winTop + fixHeight > mainTop + mainHeight){
+				fix.removeClass('pc-side-nav-fixed');
+			}else if(winTop >= fixTop){
+				fix.addClass('pc-side-nav-fixed');
+			}else{
+				fix.removeClass('pc-side-nav-fixed');
+			 }
+		 }
+
+		 w.on('scroll', adjust);
+	 });
+})(jQuery);
+</script>
+
+   
+
+</head>
+
+
+<body background="./伝わるデザイン｜研究発表のユニバーサルデザイン_files/backs.jpg">
+
+<div id="logo" style="text-align:center;padding-top: 3%;padding-bottom:2.3%;"><div id="logo">
+<a href="http://tsutawarudesign.com/"><img src="./伝わるデザイン｜研究発表のユニバーサルデザイン_files/title-13.svg" alt="伝わるデザイン" width="50%" style="max-width:660px;"></a>
+<!--<div class="none2"><img src="header/title3-11.svg" alt="研究発表のユニバーサルデザイン" width=40% style="max-width:620px;"></div>-->
+
+</div></div>
+
+<div class="gridContainer clearfix">  
+<div id="header" style="text-align:justify;margin-top:3em;margin-bottom:1em;"><div id="header">
+<nav id="nav" role="navigation">
+    <a href="http://tsutawarudesign.com/#nav" title="メニュー"><i class="fa fa-bars fa-2x" aria-hidden="true"></i>MENU</a>
+    <a href="http://tsutawarudesign.com/#" title=""><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+    <ul>
+        <li style="background-color: #b3b3b3;width:8%;min-width:3em"><a href="http://tsutawarudesign.com/index.html"><i class="fas fa-home" aria-hidden="true"></i></a></li>
+        <li style="background-color: #ea4d3c;">
+            <a href="http://tsutawarudesign.com/tsutaeru.html" aria-haspopup="true">はじめに</a>
+            <ul style="background-color: #f7f0e8;">
+                <li><a href="http://tsutawarudesign.com/tsutaeru.html">情報をデザインする</a></li>
+            </ul>
+        </li>
+        <li style="background-color: #ea4d3c;">
+            <a href="http://tsutawarudesign.com/yomiyasuku.html" aria-haspopup="true">読みやすく</a>
+            <ul style="background-color:#f7f0e8;">
+                <li><a href="http://tsutawarudesign.com/yomiyasuku.html">はじめに</a></li>
+                <li><a href="http://tsutawarudesign.com/yomiyasuku1.html">書体の使い分け</a></li>
+                <li><a href="http://tsutawarudesign.com/yomiyasuku2.html">フォントの選び方</a></li>
+                <li><a href="http://tsutawarudesign.com/yomiyasuku3.html">おすすめフォント</a></li>
+                <li><a href="http://tsutawarudesign.com/yomiyasuku4.html">文字組み</a></li>
+                <li><a href="http://tsutawarudesign.com/yomiyasuku5.html">箇条書きと段落</a></li>
+                <li><a href="http://tsutawarudesign.com/yomiyasuku6.html">約物と単位</a></li>
+            </ul>
+        </li>
+		<li style="background-color: #ea4d3c;">
+            <a href="http://tsutawarudesign.com/miyasuku.html" aria-haspopup="true">見やすく</a>
+            <ul style="background-color:#f7f0e8;">
+                <li><a href="http://tsutawarudesign.com/miyasuku.html">はじめに</a></li>
+                <li><a href="http://tsutawarudesign.com/miyasuku1.html">グラフと表</a></li>
+                <li><a href="http://tsutawarudesign.com/miyasuku2.html">画像と写真</a></li>
+                <li><a href="http://tsutawarudesign.com/miyasuku3.html">図解と描画</a></li>
+                <li><a href="http://tsutawarudesign.com/miyasuku4.html">レイアウト</a></li>
+                <li><a href="http://tsutawarudesign.com/miyasuku5.html">配色</a></li>
+            </ul>
+        </li>
+		<li style="background-color: #ea4d3c;">
+            <a href="http://tsutawarudesign.com/universal.html" aria-haspopup="true">バリアフリー</a>
+            <ul style="background-color:#f7f0e8;">
+                <li><a href="http://tsutawarudesign.com/universal.html">はじめに</a></li>
+                <li><a href="http://tsutawarudesign.com/universal1.html">配色</a></li>
+                <li><a href="http://tsutawarudesign.com/universal2.html">書体とフォント</a></li>
+                <li><a href="http://tsutawarudesign.com/universal3.html">文章</a></li>
+            </ul>
+        </li>
+		<li style="background-color: #ea4d3c;">
+            <a href="http://tsutawarudesign.com/sakurei.html" aria-haspopup="true">実践</a>
+            <ul style="background-color: #f7f0e8;">
+                <li><a href="http://tsutawarudesign.com/sakurei.html">はじめに</a></li>
+                <li><a href="http://tsutawarudesign.com/sakurei1.html">文書･レポート</a></li>
+                <li><a href="http://tsutawarudesign.com/sakurei2.html">プレゼン資料</a></li>
+                <li><a href="http://tsutawarudesign.com/sakurei3.html">ポスター発表資料</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+
+
+</div></div>
+</div>
+
+<div class="gridContainer clearfix">
+
+
+<h1>資料作成に､<font color="#e93d4b">＋</font>デザイン</h1>
+</div>
+
+<div class="gridContainer clearfix">
+<div id="LayoutDiv1">
+<!--本文ここから-->
+<!--本文ここから-->
+<!--本文ここから-->
+<br>
+<p>研究者や研究に関わる大学生、大学院生は、一年を通じて研究室ゼミや学会などで研究成果の発表を行なわなければなりません。また、近年、科学者でない人たちに対する一般向けの講演（アウトリーチ活動）の機会も増えてきています。他にも、研究論文や報告書を書いたり、研究費調達のために予算申請書やプロジェクトの提案書を作成したりすることも、研究者にとって欠かせない仕事です。これらはいずれも情報を他者（研究仲間や審査員、一般市民）へ<strong>伝えようとする行為</strong>であり、正確かつ効果的な情報の発信が望まれます。しかし、自己流で資料を作成して、闇雲に情報を発信していても、スムーズに情報は伝わりません。ときには誤った情報が伝わってしまい、研究の価値を正当に評価してもらえないことさえ起こりえるのです。</p>
+<img src="./伝わるデザイン｜研究発表のユニバーサルデザイン_files/hajimeni-02.svg" alt="shisaku" class="panel">
+<p>情報を<strong>正確に</strong>かつ<strong>スムーズに</strong>他者に伝えるためには、情報をデザインすること、つまり文章を読みやすく整えたり、図表を見やすく作ったり、内容を反映したレイアウトを作ったりすることが不可欠です。情報をデザインすることは情報を整理することそのものであり、当然、情報を整理し見た目に反映させていく過程で、<strong>内容もブラッシュアップ</strong>されていくというフィードバックを受けることが期待されます。</p>
+<p>さらに、より多くの人に正確に情報を伝えるためには、受け手の多様性に配慮し、<strong>情報授受のバリアフリー化</strong>を進めることが欠かせません。不特定多数の人が目にするあらゆる資料において視覚的ユニバーサルデザイン化を進めていくことは多様性社会における情報授受の基盤となります。</p>
+<h2>本サイトの目指すところ</h2>
+<p>本サイトでは、資料作成に必要な情報デザインの基本ルールやテクニックを｢読みやすく｣｢見やすく｣｢バリアフリー｣の３つの項目にわけて紹介していきます。単に資料の見た目をよくすることではなく、情報デザインの普及とデザインリテラシーの底上げをすることを通じて、以下のことを目指します。</p>
+<div class="myli">
+<ol>
+<li>情報受信者の負担を減らし円滑な科学コミュニケーションが行なわれること</li>
+<li>すべての情報発信者が過小評価される（見た目で損をする）ことなく、真に内容によって評価されるようになること</li>
+<li>より多くの情報受信者が等しく情報を得ることができるように情報授受のバリアフリー化をすること</li>
+</ol>
+</div>
+<p>基礎的なテクニックは最も応用が効きます。回り道をしているように感じるかもしれませんが、基本さえ理解すれば、複雑なスライドやポスターも作ることができるようになります。また、本サイトではプレゼン資料の例が多くなっていますが、予算申請書などの作成にも役立ちます。もちろん、研究に関連した資料だけでなく、教育やビジネスの現場における資料作成にも役立つ内容になっています。</p>
+<br>
+<div style="text-align: left">
+<h3>CONTENTS</h3>
+<hr>
+<h5>はじめに</h5>
+<p><a href="http://tsutawarudesign.com/tsutaeru.html">情報をデザインする</a></p>
+<hr>
+<h5>読みやすく</h5>
+<p><a href="http://tsutawarudesign.com/yomiyasuku.html">はじめに</a>／<a href="http://tsutawarudesign.com/yomiyasuku1.html"><nobr>書体の使い分け</nobr></a>／<a href="http://tsutawarudesign.com/yomiyasuku2.html"><nobr>フォントの選び方</nobr></a>／<a href="http://tsutawarudesign.com/yomiyasuku3.html"><nobr>おすすめフォント</nobr></a>／<a href="http://tsutawarudesign.com/yomiyasuku4.html"><nobr>文章</nobr></a>／<a href="http://tsutawarudesign.com/yomiyasuku5.html"><nobr>箇条書きと段落</nobr></a>／<a href="http://tsutawarudesign.com/yomiyasuku6.html"><nobr>約物と単位</nobr></a></p>
+<hr>
+<h5>見やすく</h5>
+<p><a href="http://tsutawarudesign.com/miyasuku.html">はじめに</a>／<a href="http://tsutawarudesign.com/miyasuku1.html"><nobr>グラフと表</nobr></a>／<a href="http://tsutawarudesign.com/miyasuku2.html"><nobr>画像と写真</nobr></a>／<a href="http://tsutawarudesign.com/miyasuku3.html"><nobr>図解と描画</nobr></a>／<a href="http://tsutawarudesign.com/miyasuku4.html"><nobr>レイアウト</nobr></a>／<a href="http://tsutawarudesign.com/miyasuku5.html"><nobr>配色</nobr></a></p>
+<hr>
+<h5>バリアフリー</h5>
+<p><a href="http://tsutawarudesign.com/universal.html">はじめに</a>／<a href="http://tsutawarudesign.com/universal1.html"><nobr>配色</nobr></a>／<a href="http://tsutawarudesign.com/universal2.html"><nobr>書体とフォント</nobr></a>／<a href="http://tsutawarudesign.com/universal3.html"><nobr>文章</nobr></a></p>
+<hr>
+<h5>実践</h5>
+<p><a href="http://tsutawarudesign.com/sakurei.html">はじめに</a>／<a href="http://tsutawarudesign.com/sakurei1.html"><nobr>文書･レポート</nobr></a>／<a href="http://tsutawarudesign.com/sakurei2.html"><nobr>プレゼン資料</nobr></a>／<a href="http://tsutawarudesign.com/sakurei3.html"><nobr>ポスター発表資料</nobr></a></p>
+<hr>
+</div>
+
+<br>
+
+
+<!--本文ここまで-->
+<!--本文ここまで-->
+<!--本文ここまで-->
+<br>
+<a href="http://tsutawarudesign.com/about.html" class="square_btn" style="float: left"> <i class="fas fa-user"></i> 制作者 </a> 
+<a href="http://tsutawarudesign.com/new.html" class="square_btn" style="float:center"> <i class="fas fa-check-circle"></i> 更新情報 </a>
+<a href="http://tsutawarudesign.com/tsutaeru.html" class="square_btn" style="float: right">すすむ <i class="fa fa-caret-right"></i> 
+</a>
+<br><br><br>
+
+
+  </div>
+  
+<!--サイドバー-->
+<div id="LayoutDiv2" class="none">
+    <!--広告-->
+    <div class="sidebar">
+        <div id="af"><div id="af"> 
+	<img src="./伝わるデザイン｜研究発表のユニバーサルデザイン_files/renewal-17.svg" alt=""><br><br>
+	<a href="https://www.amazon.co.jp/gp/product/4774183210/ref=as_li_tf_tl?ie=UTF8&amp;camp=247&amp;creative=1211&amp;creativeASIN=4774183210&amp;linkCode=as2&amp;tag=yuma0d4-22"><img src="./伝わるデザイン｜研究発表のユニバーサルデザイン_files/honb.svg" alt="renshu"></a>
+	<p style="line-height:1.3"><a href="https://www.amazon.co.jp/gp/product/4774183210/ref=as_li_tf_tl?ie=UTF8&amp;camp=247&amp;creative=1211&amp;creativeASIN=4774183210&amp;linkCode=as2&amp;tag=yuma0d4-22"><i class="fab fa-amazon" aria-hidden="true"></i> Amazonで見る</a></p>
+<p><a href="https://tsutawaru.net/"><img src="./伝わるデザイン｜研究発表のユニバーサルデザイン_files/office-02.svg" alt="オフィス伝わる"></a></p>
+<a href="https://student.tsutawarudesign.com/"><img src="./伝わるデザイン｜研究発表のユニバーサルデザイン_files/office-03.svg" alt="高校生"></a>
+
+</div></div>  
+    </div>
+    <br>
+
+    <!--ソーシャル-->
+    <div class="sidebar">
+        <div id="social"><div id="social">
+<a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsutawarudesign.com&amp;text=%E4%BC%9D%E3%82%8F%E3%82%8B%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3"><i class="fab fa-twitter-square fa-2x" aria-hidden="true" style="color:#55acee"></i></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftsutawarudesign.com"><i class="fab fa-facebook-square fa-2x" aria-hidden="true" style="color:#3b5998"></i></a>
+<a href="http://line.me/R/msg/text/?%E4%BC%9D%E3%82%8F%E3%82%8B%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%20https://tsutawarudesign.com"><i class="fab fa-line fa-2x" style="color:#19bc03"></i></a>
+<a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Ftsutawarudesign.com&amp;title=%E4%BC%9D%E3%82%8F%E3%82%8B%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3"><i class="fab fa-linkedin fa-2x" aria-hidden="true" style="color:#007bb5"></i></a>
+<a href="https://plus.google.com/share?url=https%3A%2F%2Ftsutawarudesign.com"><i class="fab fa-google-plus-square fa-2x" aria-hidden="true" style="color:#dd4b39"></i></a><br>
+<a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic" data-hatena-bookmark-width="23" data-hatena-bookmark-height="23" title="このエントリーをはてなブックマークに追加"><img src="./伝わるデザイン｜研究発表のユニバーサルデザイン_files/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="23" height="23" style="border: none;"></a>
+</div></div>  
+    </div>
+    <br>
+    <!--メニュー-->
+        <div class="sidebar" id="pc-side-nav">
+            <div id="menu"><div id="menu">
+<div style="font-size:140%;font-weight:700;"><i class="fa fa-bookmark" aria-hidden="true"></i> 目次</div>
+<p>
+<i class="fa fa-home" aria-hidden="true"></i> <a href="http://tsutawarudesign.com/index.html">トップページ</a><br>
+<i class="fa fa-chevron-circle-right" aria-hidden="true" style="color:#ea4d3c"></i> <a href="http://tsutawarudesign.com/tsutaeru.html">はじめに</a><br>
+<i class="fa fa-chevron-circle-right" aria-hidden="true" style="color:#ea4d3c"></i> <a href="http://tsutawarudesign.com/yomiyasuku.html">読みやすく</a><br>
+<i class="fa fa-chevron-circle-right" aria-hidden="true" style="color:#ea4d3c"></i> <a href="http://tsutawarudesign.com/miyasuku.html">見やすく</a><br>
+<i class="fa fa-chevron-circle-right" aria-hidden="true" style="color:#ea4d3c"></i> <a href="http://tsutawarudesign.com/universal.html">バリアフリー</a><br>
+<i class="fa fa-chevron-circle-right" aria-hidden="true" style="color:#ea4d3c"></i> <a href="http://tsutawarudesign.com/sakurei.html">実践</a><br>
+</p>
+</div></div>   
+        </div>
+    </div>
+<!--サイドバーここまで-->
+
+ 
+
+
+</div>
+    
+<!--固定ボタン-->
+<a href="http://tsutawarudesign.com/#" class="topBtn" id="topBtn">TOP</a>
+<!--/固定ボタン-->    
+
+
+    
+    
+<div id="footer" style="text-align:justify;padding:2em; margin-top:3em;background: #333;"><div id="footer">
+<div align="center" :="">
+<p style="font-size:70%">
+<a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Ftsutawarudesign.com&amp;text=%E4%BC%9D%E3%82%8F%E3%82%8B%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3"><i class="fab fa-twitter-square fa-2x" aria-hidden="true" style="color:#ffffff"></i></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftsutawarudesign.com"><i class="fab fa-facebook-square fa-2x" aria-hidden="true" style="color:#ffffff"></i></a>
+<a href="http://line.me/R/msg/text/?%E4%BC%9D%E3%82%8F%E3%82%8B%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%20https://tsutawarudesign.com"><i class="fab fa-line fa-2x" style="color:#ffffff"></i></a>
+<a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Ftsutawarudesign.com&amp;title=%E4%BC%9D%E3%82%8F%E3%82%8B%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3"><i class="fab fa-linkedin fa-2x" aria-hidden="true" style="color:#ffffff"></i></a>
+<a href="https://plus.google.com/share?url=https%3A%2F%2Ftsutawarudesign.com"><i class="fab fa-google-plus-square fa-2x" aria-hidden="true" style="color:#ffffff"></i></a>
+</p>
+
+<p style="line-height:1.5em;color:#ffffff;font-size:75%;font-weight:300">
+<nobr><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;<a href="http://tsutawarudesign.com/about.html#seisaku" style="color:#ffffff;">制作者情報 </a></nobr>
+<nobr><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;<a href="http://tsutawarudesign.com/new.html" style="color:#ffffff;">更新情報 </a></nobr>
+<nobr><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;<a href="http://tsutawarudesign.com/about.html#koen" style="color:#ffffff;">講演実績･サイトの実績 </a></nobr>
+<nobr><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;<a href="http://tsutawarudesign.com/policy.html" style="color:#ffffff;">サイトポリシー </a></nobr>
+<nobr><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;<a href="http://tsutawarudesign.com/about.html#que" style="color:#ffffff;">お問い合わせ </a></nobr>
+</p>
+<a href="https://tsutawaru.net/"><img src="./伝わるデザイン｜研究発表のユニバーサルデザイン_files/office-02.svg" style="width:8%; min-width: 80px; text-align: right" alt="オフィス伝わる"></a>
+<!-- shinobi ct2 -->
+
+<noscript><a href="//ct2.shinobi.jp/gg/1738538"><img src="//ct2.shinobi.jp/ll/1738538" border="0" alt="カウンター" /></a></noscript>
+<!-- /shinobi ct2 -->
+<p style="line-height:1.2em;color:#ffffff;font-size:65%;font-weignt:200;"> Copyright © 2018 Office Tsutawaru, All rights reserved. </p>
+</div>
+</div></div>
+ 
+
+
+    
+
+
+</body></html>
