@@ -20,6 +20,8 @@
 * [Nagabuchi](nagabuchi/README.md)
   * [固い絆に想いを寄せてビーコン](nagabuchi/iniiwosetebkon.md)
   * [もしもの時のMacでApache2](nagabuchi/moshimononomacdeapache2.md)
+* [Tanaka](tanaka/README.md)
+  * [田中の研究](tanaka/proposal.md)
 * [Vim](vim/README.md)
   * [Vimのすすめ](vim/vimnosusume.md)
 
