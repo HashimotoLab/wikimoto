@@ -42,8 +42,11 @@ function myFunction() {
 
 ### スプレッドシート内の特定のセルの値を取得し表示する
 
+{% code-tabs %}
+{% code-tabs-item title="cellValue.gs" %}
 ```javascript
 function myFunction() {
+
   // シートの取得
   var sheet = SpreadsheetApp.getActiveSheet()
   // セルの指定
@@ -52,6 +55,6 @@ function myFunction() {
   Logger.log(range.getValue());
 }
 ```
-
-aaa
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
