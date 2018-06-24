@@ -32,7 +32,7 @@ gitはいわゆるバージョン管理ツールの一種です．
 **ブランチの結合**
 
 ```text
-git merge --no-ff <branchname>
+$ git merge --no-ff <branchname>
 ```
 
 **ブランチの削除**
@@ -40,13 +40,13 @@ git merge --no-ff <branchname>
 * ローカルブランチの場合
 
 ```text
-git branch -d <branchname>
+$ git branch -d <branchname>
 ```
 
 * リモートブランチの場合
 
 ```text
-git push origin --delete <branchname>
+$ git push origin --delete <branchname>
 ```
 
 ### 2. コミット操作
@@ -54,7 +54,7 @@ git push origin --delete <branchname>
 **直前のコミットのやり直し**
 
 ```text
-git commit --amend
+$ git commit --amend
 ```
 
 **コミットの取り消し**
@@ -62,19 +62,19 @@ git commit --amend
 * ワーキングディレクトリの内容を保持したままコミットだけ取り消す
 
 ```text
-git reset --soft <commit>
+$ git reset --soft <commit>
 ```
 
 使用例として、直前のコミットのみ取り消すコマンドを示す
 
 ```text
-git reset --soft HEAD^ # HEAD^は直前のコミットを指す
+$ git reset --soft HEAD^ # HEAD^は直前のコミットを指す
 ```
 
 * ワーキングディレクトリの内容を保持せずコミットも取り消す
 
 ```text
-git reset --hard
+$ git reset --hard
 ```
 
 **取り消しの取り消し**
@@ -82,7 +82,7 @@ git reset --hard
 `git reset --hard`で誤ってワーキングディレクトリの状態も戻してしまったときの対処法
 
 ```text
-git reset --hard "HEAD{1}"
+$ git reset --hard "HEAD{1}"
 ```
 
 ### 3. ファイルの状態
@@ -90,13 +90,13 @@ git reset --hard "HEAD{1}"
 * 特定ファイルを特定コミットの状態に戻す
 
 ```text
-git checkout [hash] [filepath]
+$ git checkout [hash] [filepath]
 ```
 
 * 編集中のファイルをHEADに戻す
 
 ```text
-git checkout [filepath]
+$ git checkout [filepath]
 ```
 
 ## バイナリ文章フォーマットの差分を取る
@@ -111,7 +111,7 @@ macOSでの例を示す
 * Appache Tika
 
 ```text
-brew install tika
+$ brew install tika
 ```
 
 ### スクリプトの準備
@@ -130,7 +130,7 @@ tika -t "$1"
 忘れずに実行権限を付与する
 
 ```text
-chmod +x unopenxml
+$ chmod +x unopenxml
 ```
 
 `~/.gitconfig`に以下のように記述する
