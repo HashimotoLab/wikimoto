@@ -33,6 +33,37 @@ gitはいわゆるバージョン管理ツールの一種です．
 * リモートのコミットを変更する方法を書く
 
 
+## コンフィグファイル
+
+### コンフィグファイルの場所と優先順位
+
+pending
+
+### パーミッションの変更を検知させない
+
+デフォルトだとファイルのパーミッション変更も差分として検知してしまうが，これを無視させる
+
+全体に適用させるなら以下のコマンドを実行する
+
+```text
+$ git config core.filemode false
+```
+
+特定のリポジトリだけに設定するなら，`.git/config`を編集する  
+
+```text
+[core]
+	repositoryformatversion = 0
+	filemode = true # ←ここをfalseに変える
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+```
+
+（OneDriveくんがファイルを同期したタイミングでファイルパーミッションを勝手に755から644に変えるのなんなんすかね）
+
+
 ## コマンド
 
 ### 1. ブランチ操作
