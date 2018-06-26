@@ -11,6 +11,7 @@
   * [吉田の研究メモ](yoshida/nomemo.md)
   * [Google Apps Script](yoshida/google-apps-script.md)
   * [Raspberry Piの初期設定](yoshida/raspberry-pino.md)
+  * [Node-RED](yoshida/nodered.md)
 * [Kinno](kinno/README.md)
   * [Study\_ruby](kinno/study_ruby.md)
   * [latex](kinno/latex.md)
