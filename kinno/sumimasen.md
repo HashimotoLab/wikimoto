@@ -23,12 +23,3 @@ hello("NAGABUCHI Tsuyoshi")
 
 [sumimasen](https://google.com)
 
-{% tabs %}
-{% tab title="すみません" %}
-結局，リモートのコミットを取り消すベストプラクティスはどれなの
-{% endtab %}
-
-{% tab title="知りません" %}
-助けてください
-{% endtab %}
-{% endtabs %}
