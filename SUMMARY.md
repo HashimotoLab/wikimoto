@@ -27,5 +27,5 @@
   * [田中の研究](tanaka/no.md)
 * [Vim](vim/README.md)
   * [Vimのすすめ](vim/vimnosusume.md)
-* [金野吉田戸舘船木田中長谷部月居](jin-ye.md)
+* [吉田戸舘船木田中長谷部月居金野](jin-ye.md)
 
