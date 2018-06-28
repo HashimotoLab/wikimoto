@@ -27,4 +27,5 @@
   * [田中の研究](tanaka/no.md)
 * [Vim](vim/README.md)
   * [Vimのすすめ](vim/vimnosusume.md)
+* [金野](jin-ye.md)
 
