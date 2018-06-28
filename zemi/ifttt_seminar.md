@@ -23,51 +23,50 @@
 * IFTTT.comにアクセス
 * 赤枠のところに自分のメールアドレス（大学のメールアドレスで可）を入力してGet startedをクリック
 
-<img src="./image/ifttt_top.png" width=480>  
+![](../.gitbook/assets/ifttt_top.png)
 
-+ 任意のパスワードを入力しSign upをクリックするとアカウントが作成できる
+* 任意のパスワードを入力しSign upをクリックするとアカウントが作成できる
 
-<img src="./image/ifttt_password.png" width=400>
+![](../.gitbook/assets/ifttt_password.png)
 
 ## レシピ作成
 
 ### Webhooksとメールの連携
 
-+ [IFTTT.com](https://ifttt.com/)にアクセスし，右上のユーザの部分をクリックしNew Appletを選択
-+ 青字のthisをクリック
-+ 検索欄にWebhooksを入力しクリック
+* [IFTTT.com](https://ifttt.com/)にアクセスし，右上のユーザの部分をクリックしNew Appletを選択
+* 青字のthisをクリック
+* 検索欄にWebhooksを入力しクリック
 
-<img src="./image/ifttt_webhooks.png" width=400>
+![](../.gitbook/assets/ifttt_webhooks.png)
 
-+ Receive a web requestを選択
-+ 任意のイベント名（ここではmail）を入力し，Create triggerをクリック
+* Receive a web requestを選択
+* 任意のイベント名（ここではmail）を入力し，Create triggerをクリック
 
-<img src="./image/ifttt_eventname.png" width=400>  
+![](../.gitbook/assets/ifttt_eventname%20%281%29.png)
 
-+ 次にthatではEmailをクリックし，Send me an emailを選ぶ
+* 次にthatではEmailをクリックし，Send me an emailを選ぶ
 
-<img src="./image/ifttt_mail.png" width=400>
+![](../.gitbook/assets/ifttt_mail%20%281%29.png)
 
-+ デフォルトのままCreate actionをクリック
-+ Finishをクリックし，レシピ作成が完了
- 
+* デフォルトのままCreate actionをクリック
+* Finishをクリックし，レシピ作成が完了
+
 ### メール送信
 
-+ IFTTTのトップページのSearchからWebhooksを検索する
-+ 右上のDocumentationをクリック
+* IFTTTのトップページのSearchからWebhooksを検索する
+* 右上のDocumentationをクリック
 
-<img src="./image/ifttt_webhooks_top.png" width=400>  
+![](../.gitbook/assets/ifttt_webhooks_top%20%281%29.png)
 
-+ 各々のkeyが示されていることが確認できる（画像の黒塗りの部分）
+* 各々のkeyが示されていることが確認できる（画像の黒塗りの部分）
 
-<img src="./image/ifttt_key.png" width=400>  
+![](../.gitbook/assets/ifttt_key%20%281%29.png)
 
-+ Make a POST or GET web request to: の下にあるeventの部分に作成したイベント名を入力し，最下段のTest Itをクリック
-+ 登録した時のメールアドレスにメールが来たことを確認する
+* Make a POST or GET web request to: の下にあるeventの部分に作成したイベント名を入力し，最下段のTest Itをクリック
+* 登録した時のメールアドレスにメールが来たことを確認する
 
 ## 課題演習
 
-+ 例に示したレシピにおいて題名や本文を変更してみる
-+ 任意のレシピを作成する
-
+* 例に示したレシピにおいて題名や本文を変更してみる
+* 任意のレシピを作成する
 

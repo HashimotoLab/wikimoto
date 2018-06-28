@@ -21,7 +21,7 @@ IoTのためのビジュアルツールと呼ばれる
 2. `node -v`，`npm -v`で入っていることを確認
 3. `npm install -g --unsafe-perm node-red`でNode-REDをインストール
 4. `node-red`で起動
-5. ブラウザを起動し，http://localhost:1880にアクセスすると画面が表示される
+5. ブラウザを起動し，[http://localhost:1880にアクセスすると画面が表示される](http://localhost:1880にアクセスすると画面が表示される)
 
 ### Mac
 
@@ -29,7 +29,7 @@ IoTのためのビジュアルツールと呼ばれる
 2. `node -v`，`npm -v`で入っていることを確認
 3. `sudo npm install -g --unsafe-perm node-red`でNode-REDをインストール
 4. `node-red`で起動
-5. ブラウザを起動し，http://localhost:1880にアクセスすると画面が表示される
+5. ブラウザを起動し，[http://localhost:1880にアクセスすると画面が表示される](http://localhost:1880にアクセスすると画面が表示される)
 
 ## ノードの追加
 
@@ -41,7 +41,7 @@ IoTのためのビジュアルツールと呼ばれる
 * [Node-REDライブラリ検索サイト](http://flows.nodered.org/)
 * changeノードを制するものがNode-REDを制する
 
-
 ## 参考
 
 * はじめてのNode-RED, 工学社
+
