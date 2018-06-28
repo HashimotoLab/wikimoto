@@ -20,6 +20,7 @@
   * [git](kinno/git.md)
   * [proposal\_packages](kinno/proposal_packages.md)
   * [sumimasen](kinno/sumimasen.md)
+  * [direction\_wrapper](kinno/direction_wrapper.md)
 * [Nagabuchi](nagabuchi/README.md)
   * [固い絆に想いを寄せてビーコン](nagabuchi/iniiwosetebkon.md)
   * [もしもの時のMacでApache2](nagabuchi/moshimononomacdeapache2.md)
