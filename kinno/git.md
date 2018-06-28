@@ -42,13 +42,13 @@ pending
 
 全体に適用させるなら以下のコマンドを実行する
 
-```bash
+```text
 $ git config core.filemode false
 ```
 
 特定のリポジトリだけに設定するなら，`.git/config`を編集する
 
-```bash
+```text
 [core]
     repositoryformatversion = 0
     filemode = true # ←ここをfalseに変える
@@ -110,7 +110,7 @@ $ git show HEAD^^^^ # こっちも4つ前のコミットを参照する
 例えば，以下の図のように`HEAD`の1つ前のコミットで2つのブランチをマージしていた場合，`HEAD`の親コミットは2つ存在することになる．  
 このような場合，親コミットをどちらか片方のブランチから選んで指定する必要がある．
 
-```bash
+```text
         ここがHEAD^1で指定される
                  ↓
 master *-*-*-*-*-*-* ←ここがHEADだとするとHEADの親コミットはmasterとsubブランチの2つ
@@ -138,7 +138,7 @@ $ git show HEAD^2 # sub側の親コミットを参照
 
 #### ブランチの結合
 
-```bash
+```text
 $ git merge --no-ff <branchname>
 ```
 
@@ -146,13 +146,13 @@ $ git merge --no-ff <branchname>
 
 * ローカルブランチの場合
 
-```bash
+```text
 $ git branch -d <branchname>
 ```
 
 * リモートブランチの場合
 
-```bash
+```text
 $ git push origin --delete <branchname>
 ```
 
@@ -160,7 +160,7 @@ $ git push origin --delete <branchname>
 
 #### 直前のコミットのやり直し
 
-```bash
+```text
 $ git commit --amend
 ```
 
@@ -168,19 +168,19 @@ $ git commit --amend
 
 * ワーキングディレクトリの内容を保持したままコミットだけ取り消す
 
-```bash
+```text
 $ git reset --soft <commit>
 ```
 
 使用例として、直前のコミットのみ取り消すコマンドを示す
 
-```bash
+```text
 $ git reset --soft HEAD^ # HEAD^は直前のコミットを指す
 ```
 
 * ワーキングディレクトリの内容を保持せずコミットも取り消す
 
-```bash
+```text
 $ git reset --hard
 ```
 
@@ -188,7 +188,7 @@ $ git reset --hard
 
 `git reset --hard`で誤ってワーキングディレクトリの状態も戻してしまったときの対処法
 
-```bash
+```text
 $ git reset --hard "HEAD{1}"
 ```
 
@@ -198,11 +198,11 @@ $ git reset --hard "HEAD{1}"
 
 書式は以下の通り
 
-```bash
+```text
 $ git log --diff-filter=
 ```
 
-```bash
+```text
 $ git diff --diff-filter=
 ```
 
@@ -214,13 +214,13 @@ $ git diff --diff-filter=
 
 #### 特定ファイルを特定コミットの状態に戻す
 
-```bash
+```text
 $ git checkout [hash] [filepath]
 ```
 
 #### 編集中のファイルをHEADに戻す
 
-```bash
+```text
 $ git checkout [filepath]
 ```
 
@@ -228,14 +228,14 @@ $ git checkout [filepath]
 
 ファイルを削除したコミットを検索する
 
-```bash
+```text
 $ git log --diff-filter=D --summary
 ```
 
 ファイルの状態を削除したコミットの直前のコミットに戻せばファイルを復元できる  
 直前のコミットの指定には`^`を使用する
 
-```bash
+```text
 $ git checkout [hash]^ -- [filepath]
 ```
 
@@ -250,7 +250,7 @@ macOSでの例を示す
 * Java
 * Appache Tika
 
-```bash
+```text
 $ brew install tika
 ```
 
@@ -269,20 +269,20 @@ tika -t "$1"
 
 忘れずに実行権限を付与する
 
-```bash
+```text
 $ chmod +x unopenxml
 ```
 
 `~/.gitconfig`に以下のように記述する
 
-```bash
+```text
 [diff "openxml"]
-  bashconv = /usr/local/bin/unopenxml
+  textconv = /usr/local/bin/unopenxml
 ```
 
 あとは、バイナリ文章フォーマットの差分を取りたいリポジトリに`.gitattributes`を作成し、対象ファイルを記述する。以下の例ではpdfとMicrosoft Officeのファイルに対して`unopenxml`を用いた`git diff`を行えるように設定している
 
-```bash
+```text
 *.pdf diff=openxml
 *.pptx diff=openxml
 *.docx diff=openxml
