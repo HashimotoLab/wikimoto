@@ -59,3 +59,24 @@ HTMLなどのコンテンツの送受信に用いられる通信プロトコル
 
 * 購読側がブローカー（サーバ）に対してメッセージ送信を要求するのは帯域内で行われ，セキュリティ問題が発生する可能性がある．購読側の正当性の検証をしない．
 
+## AMQP\(Advanced Message Queueing Protocom\)
+
+メッセージ指向ミドルウェアのオープンスタンダードなアプリケーション層プロトコル  
+
+### メッセージングシステム
+
+* Exchange
+  * Exchangeは，生成されたMessageを受け取る役割を持つ．そのMessageはBindingに従って，適切なMessage Queueへ渡す．
+* Binding
+  * ExchangeとMessageQueueの対応づけを行う．
+* Message Queue
+  * Messageを蓄積し，Consumer Applicationに引き渡す役割を持つ．
+
+Messageの大まかな流れ
+
+1. Publisher Applicationによって生成されたMessageは，Exchangeに渡される．
+2. ExchangeはBindingに基づいて，Messageを適切なMessage Queueに引き渡す．
+3. Consumer Applicationによって，Message QueueからMessageが取り出される．
+
+<img src="./amqp.png" width=320>
+
