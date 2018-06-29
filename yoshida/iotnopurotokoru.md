@@ -44,6 +44,7 @@ HTMLなどのコンテンツの送受信に用いられる通信プロトコル
 | Subscriber | メッセージを受け取る（購読者） |
 | Broker | メッセージを仲介する（仲介者） |
 
+![MQTTモデル](./yoshida/mqtt_model.png)
 
 ### Pub/Sub型データ配信モデル
 
