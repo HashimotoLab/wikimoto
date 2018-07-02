@@ -82,4 +82,14 @@ Messageの大まかな流れ
 
 ### Exchangeについて
 
+Exchangeは，設定された配送方法やbindingに従って，Message Queueにメッセージを配送する役割を持つ．  
+Exchangeで指定可能な配送方法は以下の様なものがある．  
 
++ Direct
+  + DirectなExchangeは，Messageに付与されているrouting keyと，bindingに設定されているbinding keyを見て，routing key = binding keyとなる様な，Message QueueにMessageを配送する．
+
++ Fanout
+  + FanoutなExchangeは，bindされているMessage Queue全てに受け取ったメッセージの配送を行います．
+  
++ Topic
+  + Directと同じで，メッセージにrouting keyを指定して，そのkeyを元に配送するMessage Queueを選択する．
