@@ -80,3 +80,6 @@ Messageの大まかな流れ
 
 <img src="./amqp.png" width=320>
 
+### Exchangeについて
+
+
