@@ -27,9 +27,9 @@
 * [Tanaka](tanaka/README.md)
   * [田中の研究](tanaka/no.md)
   * [ICカードマン](tanaka/iccardman.md)
+* [Hasebe](hasebe/README.md)
+  * [長谷部](hasebe/hasebe.md)
 * [Vim](vim/README.md)
   * [Vimのすすめ](vim/vimnosusume.md)
 * [Slack](slack.md)
-* [Hasebe](hasebe/README.md)
-  * [長谷部](hasebe/hasebe.md)
 
