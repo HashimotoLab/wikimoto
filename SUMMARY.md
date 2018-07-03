@@ -30,5 +30,6 @@
 * [Vim](vim/README.md)
   * [Vimのすすめ](vim/vimnosusume.md)
 * [Slack](slack.md)
-* [Hasebe](hasebe.md)
+* [Hasebe](hasebe/README.md)
+  * [長谷部](hasebe/hasebe.md)
 
