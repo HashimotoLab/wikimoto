@@ -101,7 +101,7 @@ HTMLなどのコンテンツの送受信に用いられる通信プロトコル
 
 * 購読側がブローカー（サーバ）に対してメッセージ送信を要求するのは帯域内で行われ，セキュリティ問題が発生する可能性がある．購読側の正当性の検証をしない．
 
-## AMQP\(Advanced Message Queueing Protocom\)
+## AMQP\(Advanced Message Queueing Protocol\)
 
 メッセージ指向ミドルウェアのオープンスタンダードなアプリケーション層プロトコル
 
