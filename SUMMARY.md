@@ -26,6 +26,7 @@
   * [もしもの時のMacでApache2](nagabuchi/moshimononomacdeapache2.md)
 * [Tanaka](tanaka/README.md)
   * [田中の研究](tanaka/no.md)
+  * [ICカードマン](tanaka/iccardman.md)
 * [Vim](vim/README.md)
   * [Vimのすすめ](vim/vimnosusume.md)
 * [Slack](slack.md)
