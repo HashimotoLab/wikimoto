@@ -44,7 +44,7 @@ HTMLなどのコンテンツの送受信に用いられる通信プロトコル
 | Subscriber | メッセージを受け取る（購読者） |
 | Broker | メッセージを仲介する（仲介者） |
 
-<img src="./mqtt_model.png" width=320>
+![](../.gitbook/assets/mqtt_model.png)
 
 ### Pub/Sub型データ配信モデル
 
@@ -61,7 +61,7 @@ HTMLなどのコンテンツの送受信に用いられる通信プロトコル
 
 ## AMQP\(Advanced Message Queueing Protocom\)
 
-メッセージ指向ミドルウェアのオープンスタンダードなアプリケーション層プロトコル  
+メッセージ指向ミドルウェアのオープンスタンダードなアプリケーション層プロトコル
 
 ### メッセージングシステム
 
@@ -78,19 +78,17 @@ Messageの大まかな流れ
 2. ExchangeはBindingに基づいて，Messageを適切なMessage Queueに引き渡す．
 3. Consumer Applicationによって，Message QueueからMessageが取り出される．
 
-<img src="./amqp.png" width=320>
+![](../.gitbook/assets/amqp.png)
 
 ### Exchangeについて
 
 Exchangeは，設定された配送方法やbindingに従って，Message Queueにメッセージを配送する役割を持つ．  
-Exchangeで指定可能な配送方法は以下の様なものがある．  
+Exchangeで指定可能な配送方法は以下の様なものがある．
 
-+ Direct
-  + DirectなExchangeは，Messageに付与されているrouting keyと，bindingに設定されているbinding keyを見て，routing key = binding keyとなる様な，Message QueueにMessageを配送する．
-
-+ Fanout
-  + FanoutなExchangeは，bindされているMessage Queue全てに受け取ったメッセージの配送を行います．
-  
-+ Topic
-  + Directと同じで，メッセージにrouting keyを指定して，そのkeyを元に配送するMessage Queueを選択する．ただし，keyを階層で区切った形にして，部分一致で配送先を選択させることができる
+* Direct
+  * DirectなExchangeは，Messageに付与されているrouting keyと，bindingに設定されているbinding keyを見て，routing key = binding keyとなる様な，Message QueueにMessageを配送する．
+* Fanout
+  * FanoutなExchangeは，bindされているMessage Queue全てに受け取ったメッセージの配送を行います．
+* Topic
+  * Directと同じで，メッセージにrouting keyを指定して，そのkeyを元に配送するMessage Queueを選択する．
 

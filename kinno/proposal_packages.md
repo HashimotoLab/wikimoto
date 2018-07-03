@@ -4,55 +4,24 @@
 
 ## ライブラリの構成
 
-proposal_packagesは研究で使用する種々の機能をPythonのモジュール群にまとめたパッケージです．
+proposal\_packagesは研究で使用する種々の機能をPythonのモジュール群にまとめたパッケージです．
 
-<img src="proposal_packages_stracture.png" alt="" title="proposal_packages_stracture" width="400" height="850" />
+![](../.gitbook/assets/proposal_packages_stracture.png)
 
 各ファイルの簡単な説明を以下に示す．
 
-* **sample**  
-モジュールの使用例を示したファイルが置いてある  
-いまのところ，方向性ラッパーのものしかない
-
-* **test**
-モジュールのユニットテストを行うテストライブラリ  
-いまのところ，双方向方向性ラッパーのものしかない
-
-* **\_\_init\_\_.py**  
-Pythonでディレクトリをモジュールとして認識させるために必要なファイル  
-モジュールインポートする際，ここに書かれた処理が必ず実行されるが特に何も書いていない
-
-* **brite2dat.py**  
-BRITEが生成するbriteファイルを研究室でよく使うGLPKのdatファイルに変換したり，networkxでトポロジを描画する際に必要な位置座標を格納したcsvファイルを生成するコマンドラインツール  
-内部でbrite\_utils.pyを呼び出している
-
-* **brite\_utils.py**  
-briteファイルをパースしてノード，リンク，位置座標をPythonのデータ形式に変換するクラスと，それらをdatファイル，位置座標のcsvファイルに書き出す関数が定義されている  
-
-* **dat\_utils.py**
-datファイルをパースして各パラメータをPythonのデータ形式に変換するクラスが定義されている
-
-* **directed_graph.py**
-Graphillionで有向グラフに対して方向性を考慮したパス列挙を行えるようにするラッパー
-
-* **directed_link_two_virtual_nodes.py**  
-Graphillionで双方向リンクを持つグラフに対して方向性を考慮したパス列挙を行えるようにするラッパー  
-仮想ノードを2個追加する  
-
-* **directed_link.py**  
-Graphillionで双方向リンクを持つグラフに対して方向性を考慮したパス列挙を行えるようにするラッパー  
-仮想ノードを1個追加する  
-
-* **drawing.py**  
-モデルデータのdatファイルと位置座標csvファイルを読み込んでモデルデータを描画するライブラリ  
-
-* **gridgraph.py**  
-格子グラフの生成と描画を行うライブラリ  
-
-* **graphillion_utils.py**  
-Graphillionにないがよく使う関数をまとめたライブラリ  
-作っている途中
-
+* **sample** モジュールの使用例を示したファイルが置いてある いまのところ，方向性ラッパーのものしかない
+* **test** モジュールのユニットテストを行うテストライブラリ いまのところ，双方向方向性ラッパーのものしかない
+* **\_\_init\_\_.py** Pythonでディレクトリをモジュールとして認識させるために必要なファイル モジュールインポートする際，ここに書かれた処理が必ず実行されるが特に何も書いていない
+* **brite2dat.py** BRITEが生成するbriteファイルを研究室でよく使うGLPKのdatファイルに変換したり，networkxでトポロジを描画する際に必要な位置座標を格納したcsvファイルを生成するコマンドラインツール 内部でbrite\_utils.pyを呼び出している
+* **brite\_utils.py** briteファイルをパースしてノード，リンク，位置座標をPythonのデータ形式に変換するクラスと，それらをdatファイル，位置座標のcsvファイルに書き出す関数が定義されている
+* **dat\_utils.py** datファイルをパースして各パラメータをPythonのデータ形式に変換するクラスが定義されている
+* **directed\_graph.py** Graphillionで有向グラフに対して方向性を考慮したパス列挙を行えるようにするラッパー
+* **directed\_link\_two\_virtual\_nodes.py** Graphillionで双方向リンクを持つグラフに対して方向性を考慮したパス列挙を行えるようにするラッパー 仮想ノードを2個追加する
+* **directed\_link.py** Graphillionで双方向リンクを持つグラフに対して方向性を考慮したパス列挙を行えるようにするラッパー 仮想ノードを1個追加する
+* **drawing.py** モデルデータのdatファイルと位置座標csvファイルを読み込んでモデルデータを描画するライブラリ
+* **gridgraph.py** 格子グラフの生成と描画を行うライブラリ
+* **graphillion\_utils.py** Graphillionにないがよく使う関数をまとめたライブラリ 作っている途中
 
 ## dat\_utils.py
 
@@ -60,7 +29,7 @@ Graphillionにないがよく使う関数をまとめたライブラリ
 
 datファイルに記述されたパラメータをPythonのデータ形式に変換するクラス`Dat`が定義されている．  
 パーサは宣言文を元にパラメータの位置を特定するので宣言文が正しく記述されていないとパラメータを取り出すことができない．  
-各パラメータは以下の宣言文で書かれているものとする．  
+各パラメータは以下の宣言文で書かれているものとする．
 
 ```text
 * number of demand path
@@ -96,28 +65,28 @@ param : DK :d:=
 
 #### クラス変数
 
-|variable|概要|
-|:---:|:----:|
-|`attr_regexp`|各パラメータの名前をキー，宣言文の正規表現を値とする辞書|
+| variable | 概要 |
+| :---: | :---: |
+| `attr_regexp` | 各パラメータの名前をキー，宣言文の正規表現を値とする辞書 |
 
 宣言文の微妙な表記揺れを吸収するために本当は使いたくないが正規表現を使用している．  
 宣言文が統一されているなら`str.starswith`を使って文字列先頭のマッチングをしたほうがよい．
 
 #### インスタンス変数
 
-|variable|概要|
-|:---:|:----:|
-|`filename`|datファイルの名前|
-|`all_lines`|datファイルを読み込んで得られた文字列|
-|`__dk`|トラフィックのばらつきを正規化する値|
-|`__m`|トラフィック数|
-|`__n`|ノード数|
-|`__hop`|各リンク間のホップ数|
-|`__cost`|各リンクのコスト|
-|`__capacity`|各リンクの容量|
-|`__start`|スタートノード|
-|`__target`|ターゲットノード|
-|`__DK`|トラフィックのばらつき|
+| variable | 概要 |
+| :---: | :---: |
+| `filename` | datファイルの名前 |
+| `all_lines` | datファイルを読み込んで得られた文字列 |
+| `__dk` | トラフィックのばらつきを正規化する値 |
+| `__m` | トラフィック数 |
+| `__n` | ノード数 |
+| `__hop` | 各リンク間のホップ数 |
+| `__cost` | 各リンクのコスト |
+| `__capacity` | 各リンクの容量 |
+| `__start` | スタートノード |
+| `__target` | ターゲットノード |
+| `__DK` | トラフィックのばらつき |
 
 `filename`以外はprivateな変数で直接名前を指定して参照できないようになっている．
 
@@ -127,10 +96,11 @@ param : DK :d:=
 
 コンストラクタ．初期化処理として，datファイルの読み込みとprivateなインスタンス変数に`attr_regexp`のキーの文字列を代入する．
 
-**arguments:**  
+**arguments:**
 
-* datfile(string)  
-datファイルのパス
+* datfile\(string\)  
+
+  datファイルのパス
 
 #### `__get_attr1(self, param)`
 
@@ -138,8 +108,9 @@ datファイルのパス
 
 **arguments**
 
-* param(strinig)  
-`self.__dk`，`self.__m`，`self.__n`のいずれかを指定
+* param\(strinig\)  
+
+  `self.__dk`，`self.__m`，`self.__n`のいずれかを指定
 
 **returns**
 
@@ -151,12 +122,8 @@ datファイルのパス
 
 **arguments**
 
-* param(strinig)  
-`dk`，`m`，`n`以外のパラメータ
-
-* func(function)  
-関数オブジェクト  
-funcによってパラメータの各行が処理される
+* param\(strinig\) `dk`，`m`，`n`以外のパラメータ
+* func\(function\) 関数オブジェクト funcによってパラメータの各行が処理される
 
 **yields**
 
@@ -170,8 +137,9 @@ funcを適用したパラメータの各行
 
 **arguments**
 
-* param(strinig)  
-パラメータ`capacity`，`cost`，`hop`のいずれかを指定
+* param\(strinig\)  
+
+  パラメータ`capacity`，`cost`，`hop`のいずれかを指定
 
 **returns**
 
@@ -184,8 +152,9 @@ funcを適用したパラメータの各行
 
 **arguments**
 
-* param(strinig)  
-パラメータ`traffic`を指定
+* param\(strinig\)  
+
+  パラメータ`traffic`を指定
 
 **returns**
 
@@ -198,8 +167,9 @@ funcを適用したパラメータの各行
 
 **arguments**
 
-* param(strinig)  
-パラメータ`DK`を指定
+* param\(strinig\)  
+
+  パラメータ`DK`を指定
 
 **returns**
 
@@ -210,23 +180,40 @@ funcを適用したパラメータの各行
 各パラメータにアクセスするためのゲッターメソッドが定義されている．ゲッターメソッドは内部で対応する`__get_attrX`を呼び出してパラメータを取り出している．
 
 * `dk(self)`  
-`return self.__get_attr1(self.__dk)`
+
+  `return self.__get_attr1(self.__dk)`
+
 * `m(self)`  
-`return self.__get_attr1(self.__m)`
+
+  `return self.__get_attr1(self.__m)`
+
 * `n(self)`  
-`return self.__get_attr1(self.__n)`
+
+  `return self.__get_attr1(self.__n)`
+
 * `n(self)`  
-`return self.__get_attr1(self.__n)`
+
+  `return self.__get_attr1(self.__n)`
+
 * `cost(self)`  
-`return self.__get_attr2(self.__cost)`
+
+  `return self.__get_attr2(self.__cost)`
+
 * `capacity(self)`  
-`return self.__get_attr2(self.__capacity)`
+
+  `return self.__get_attr2(self.__capacity)`
+
 * `hop(self)`  
-`return self.__get_attr2(self.__hop)`
+
+  `return self.__get_attr2(self.__hop)`
+
 * `traffic(self)`  
-`return self.__get_attr3(self.__start, self.__target)`
+
+  `return self.__get_attr3(self.__start, self.__target)`
+
 * `DK(self)`  
-`return self.__get_attr4(self.__start, self.__DK)`
+
+  `return self.__get_attr4(self.__start, self.__DK)`
 
 ### 使用例
 
@@ -256,3 +243,4 @@ converter = lambda params: (float(params[0]), float(params[1]), float(params[2])
 for p in sample.read_params("cost", converter):
     print(p)
 ```
+
