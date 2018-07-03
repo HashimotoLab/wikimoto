@@ -42,8 +42,6 @@ $ vimtutor
 
 {% embed data="{\"url\":\"https://vimawesome.com/\",\"type\":\"link\",\"title\":\"Vim Awesome\",\"description\":\"Awesome Vim plugins from across the universe\",\"icon\":{\"type\":\"icon\",\"url\":\"https://vimawesome.com/static/favicon.ico\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://vimawesome.com/static/img/og.png\",\"width\":796,\"height\":416,\"aspectRatio\":0.5226130653266332}}" %}
 
-
-
 ### プラグインマネージャー
 
 #### dein.vim
@@ -85,7 +83,7 @@ vimで開いているファイルが別のアプリケーションなどによ�
 
 ### コマンド履歴を表示
 
-コマンドラインモードで使用したコマンドの履歴を表示する。コマンドは`ce`などで単語削除したり、ビジュアル、リプレイスモードで編集もできる。
+コマンドラインモード で使用したコマンドの履歴を表示する。コマンドは`ce`などで単語削除したり、ビジュアル、リプレイスモードで編集もできる。
 
 ```text
 # ノーマルモードで実行
@@ -219,6 +217,4 @@ Vimのコマンドラインモードで!に続けてshellコマンドを打っ�
 `%`は文字列置換の項目でも述べているとおり、現在操作対象になっているファイルを表している。`tee`が渡してくる変更後の内容を変更前の内容を持ったカレントファイルに上書きするために`%`を指定している。
 
 以上をまとめると、変更後の内容をsudo権限を付けた`tee`コマンドでカレントファイルに上書きしているだけである。やや長いコマンドだが分解して追っていくと、そんなに激しい操作をしているわけではないことが分かる。
-
-
 
