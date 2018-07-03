@@ -92,4 +92,5 @@ Exchangeで指定可能な配送方法は以下の様なものがある．
   + FanoutなExchangeは，bindされているMessage Queue全てに受け取ったメッセージの配送を行います．
   
 + Topic
-  + Directと同じで，メッセージにrouting keyを指定して，そのkeyを元に配送するMessage Queueを選択する．
+  + Directと同じで，メッセージにrouting keyを指定して，そのkeyを元に配送するMessage Queueを選択する．ただし，keyを階層で区切った形にして，部分一致で配送先を選択させることができる
+
