@@ -21,7 +21,7 @@ IoTのためのビジュアルツールと呼ばれる
 2. `node -v`，`npm -v`で入っていることを確認
 3. `npm install -g --unsafe-perm node-red`でNode-REDをインストール
 4. `node-red`で起動
-5. ブラウザを起動し，[http://localhost:1880にアクセスすると画面が表示される](http://localhost:1880にアクセスすると画面が表示される)
+5. ブラウザを起動し，http://localhost:1880にアクセスすると画面が表示される
 
 ### Mac
 
@@ -29,7 +29,7 @@ IoTのためのビジュアルツールと呼ばれる
 2. `node -v`，`npm -v`で入っていることを確認
 3. `sudo npm install -g --unsafe-perm node-red`でNode-REDをインストール
 4. `node-red`で起動
-5. ブラウザを起動し，[http://localhost:1880にアクセスすると画面が表示される](http://localhost:1880にアクセスすると画面が表示される)
+5. ブラウザを起動し，http://localhost:1880にアクセスすると画面が表示される
 
 ## ノードの追加
 
@@ -39,9 +39,11 @@ IoTのためのビジュアルツールと呼ばれる
 
 * Twitterのツイート取得・投稿
 * HTML，CSS，Javasciptを用いたWebページの作成と，その情報のやりとり
-* Microsoft Azureを使った画像認識（画像は何かを示してくれる）
+* Microsoft Azureを使った画像認識（精度は低いが，画像は何かを示してくれる），日本語訳
 * 任意の値を用いたダッシュボードの作成による可視化
 * データベースの利用
+* 指定した間隔，指定した日時において，特定の動作を行う（曜日指定も可）
+* マッピングの可視化
 
 ## Tips
 
