@@ -1,4 +1,4 @@
-# Raspberry Piの初期設定
+# Raspberry Pi
 
 ## RaspbianOSのダウンロード
 
@@ -61,4 +61,15 @@ $ sudo apt-get rpi-update
 ぼちぼち時間かかるかも
 
 大体終わったら，再起動しといた方が良い
+
+### プロキシを通してブラウジング
+
+`chromium-browser --proxy-server="wproxy.akita-u.ac.jp:8080"`
+
+### vncserverの起動
+
+widthとheightの部分に好きなサイズを入れる
+
+`vncserver -geometry widthxheight`
+
 
