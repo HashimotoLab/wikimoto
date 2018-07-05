@@ -21,7 +21,7 @@ IoTのためのビジュアルツールと呼ばれる
 2. `node -v`，`npm -v`で入っていることを確認
 3. `npm install -g --unsafe-perm node-red`でNode-REDをインストール
 4. `node-red`で起動
-5. ブラウザを起動し，http://localhost:1880にアクセスすると画面が表示される
+5. ブラウザを起動し，[http://localhost:1880にアクセスすると画面が表示される](http://localhost:1880にアクセスすると画面が表示される)
 
 ### Mac
 
@@ -29,7 +29,7 @@ IoTのためのビジュアルツールと呼ばれる
 2. `node -v`，`npm -v`で入っていることを確認
 3. `sudo npm install -g --unsafe-perm node-red`でNode-REDをインストール
 4. `node-red`で起動
-5. ブラウザを起動し，http://localhost:1880にアクセスすると画面が表示される
+5. ブラウザを起動し，[http://localhost:1880にアクセスすると画面が表示される](http://localhost:1880にアクセスすると画面が表示される)
 
 ## ノードの追加
 
@@ -59,6 +59,4 @@ IoTのためのビジュアルツールと呼ばれる
 * つないでつないでプログラミング Node-REDでつくる初めてのアプリ, リックテレコム  
 
 {% embed data="{\"url\":\"https://qiita.com/zuhito/items/e9abfd6f1ba188f908ed\",\"type\":\"link\",\"title\":\"目からウロコ！Node-REDのデザインパターン10選 - Qiita\",\"description\":\"私が\[Node-RED\]\(http://nodered.jp\)を使い始めて4カ月が経ちました。開発をしていると、Node-REDには単にノードを横に繋いでゆくだけではなく、ノードの接続関係を活用したデザインパターンが沢山あることに気が...\",\"icon\":{\"type\":\"icon\",\"url\":\"https://cdn.qiita.com/assets/favicons/public/apple-touch-icon-f9a6afad761ec2306e10db2736187c8b.png\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://cdn.qiita.com/assets/qiita-fb-2887e7b4aad86fd8c25cea84846f2236.png\",\"width\":200,\"height\":200,\"aspectRatio\":1}}" %}
-
-
 
