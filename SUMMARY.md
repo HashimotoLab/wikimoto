@@ -10,7 +10,7 @@
 * [Yoshida](yoshida/README.md)
   * [吉田の研究メモ](yoshida/nomemo.md)
   * [Google Apps Script](yoshida/google-apps-script.md)
-  * [Raspberry Pi](yoshida/raspberry-pino.md)
+  * [Raspberry Pi](yoshida/raspberry-pi.md)
   * [Node-RED](yoshida/node-red.md)
   * [IoT関連のプロトコル](yoshida/iotnopurotokoru.md)
 * [Kinno](kinno/README.md)

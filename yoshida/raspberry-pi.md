@@ -18,7 +18,7 @@ Macだとdisk utilityアプリで初期化・マウント解除出来る
 
 #### micro SDカードへの書き込み
 
- 書き込みを行う前に，
+書き込みを行う前に，
 
 `df -h`
 
@@ -64,12 +64,17 @@ $ sudo apt-get rpi-update
 
 ### プロキシを通してブラウジング
 
-`chromium-browser --proxy-server="wproxy.akita-u.ac.jp:8080"`
+```bash
+$ chromium-browser --proxy-server="wproxy.akita-u.ac.jp:8080"
+```
 
 ### vncserverの起動
 
 widthとheightの部分に好きなサイズを入れる
 
-`vncserver -geometry widthxheight`
+```bash
+$ vncserver -geometry widthxheight
+```
+
 
 
