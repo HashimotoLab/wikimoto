@@ -12,7 +12,7 @@
   * [Google Apps Script](yoshida/google-apps-script.md)
   * [Raspberry Pi](yoshida/raspberry-pi.md)
   * [Node-RED](yoshida/node-red.md)
-  * [プロトコル・無線通信規格・○aaS](yoshida/purotokoruaas.md)
+  * [プロトコル・無線通信規格・XaaS](yoshida/purotokoruaas.md)
 * [Kinno](kinno/README.md)
   * [Study\_ruby](kinno/study_ruby.md)
   * [latex](kinno/latex.md)
