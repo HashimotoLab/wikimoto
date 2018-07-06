@@ -72,7 +72,7 @@ CPUを強化する暗号処理用の演算装置
 
 ## ICカードの種類
 
-![](../.gitbook/assets/ickdo.PNG)
+![](../.gitbook/assets/ickdo%20%281%29.PNG)
 
 #### 接触型・・・高いセキュリティが求められる場合に利用される
 
