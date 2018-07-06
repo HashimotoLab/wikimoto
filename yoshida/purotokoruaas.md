@@ -168,15 +168,37 @@ Wi-Fiが約100mの通信距離を持つのに対して，数mから数十m程度
 
 XaaSとは，情報処理に用いられる何らかのコンピュータ資源を，あるいはそうした資源の全てを，インターネットを通じたサービスとして提供することである．
 
+XaaSを利用することで，従来は製品の購入・システムの構築・インフラの敷設などを必要とした高コストのコンピューティング資源を，インターネットを通じて必要な分のみ利用することができる．
+
 Xの部分は未知の値を指し，SaaS，PaaS，IaaS，HaaSなどある
 
-#### SaaS
+#### SaaS:Software
 
-#### PaaS
+これまでパッケージ製品として提供されていたソフトウェアを，インターネット経由でサービスとして提供・利用する形態
 
-#### IaaS
+例:Gmail，Yahooメール
+
+#### PaaS:Platform
+
+アプリケーションソフトが稼働するためのハードウェアやOSなどのプラットフォーム一式を，インターネット上のサービスとして提供する形態
+
+例:Microsoft Azure，Google App Engine， Heroku，IBM Bluemix
+
+#### IaaS:Infrastructure
+
+情報システムの稼働に必要な仮想サーバをはじめとした機材やネットワークのインフラを，インターネット上のサービスとして提供する形態
+
+例:Xサーバーなどのレンタルサーバー，Amazon Elastic Compute Cloud，Google Compute Engine
 
 #### HaaS
+
+#### DaaS:Desktop
+
+パソコンのデスクトップ環境をクラウドで作って，インターネットを通じて利用するサービス
+
+例:Microsoft Virtual Desktop，IBM Smart Business Desktop
+
+![](../.gitbook/assets/report_01_zu01.png)
 
 
 
