@@ -30,6 +30,10 @@ ICカードの種類は以下のように分類できる
 
 ### ICカードの構造的な仕組み
 
+ICカードは「小さなコンピュータ」と呼ばれる。
+
+ICカードに搭載されているICチップは下図のようパソコンと変わらないような構造になっている。
+
 ![](../.gitbook/assets/icchippu.PNG)
 
 #### CPU\( Central Processing Unit\)
