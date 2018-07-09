@@ -32,45 +32,13 @@ ICカードに搭載されているICチップは下図のようパソコンと�
 
 ![](../.gitbook/assets/icchippu.PNG)
 
-#### CPU\( Central Processing Unit\)
+* **CPU\( Central Processing Unit\)**
+* **コプロセッサ\( co-processor, 補助プロセッサ\)**
+* **RAM\(Random access memory\)**
+* **ROM\(Read only memory\)**
+* **EEPROM\( Electrically Erasable Programmable Read-Only Memory\)**
 
-ICカード内の処理を制御するICチップの心臓部
-
-中央処理装置
-
-
-
-#### ROM\(Read only memory\)
-
-プログラムを格納するために使用する読み出し専用不揮発性メモリ
-
-実行プログラムや暗号プログラムを格納
-
-
-
-#### RAM\(Random access memory\)
-
-一時的なデータを読み書きするための高速メモリ
-
-データの作業領域として使用
-
-
-
-#### EEPROM\( Electrically Erasable Programmable Read-Only Memory\)
-
-主にデータを格納するために使用する書き換え可能な不揮発性メモリ
-
-カード保持者の個人情報などを記録
-
-
-
-#### コプロセッサ\( co-processor, 補助プロセッサ\)
-
-CPUを強化する暗号処理用の演算装置
-
-公開鍵暗号の演算を高速に処理するための専用プロセッサ
-
-
+![](../.gitbook/assets/icchippu%20%281%29.PNG)
 
 ### ICカードの動作的な仕組み
 
