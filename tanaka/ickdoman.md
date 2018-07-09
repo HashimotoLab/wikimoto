@@ -6,6 +6,10 @@
 
 集積回路\(IC:Integrated circuit\)・・・半導体チップの表面および内部に、複雑な機能を果たす電子回路の多数の素子が作り込まれている電子部品
 
+![](../.gitbook/assets/ickdovisa.PNG)
+
+![](../.gitbook/assets/suica.PNG)
+
 ## ICカードの特徴
 
 * 記録できるデータ量が多い
