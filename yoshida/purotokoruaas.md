@@ -213,25 +213,23 @@ XaaSを利用することで，従来は製品の購入・システムの構築�
 
 Xの部分は未知の値を指し，SaaS，PaaS，IaaS，HaaSなどある
 
-#### SaaS:Software
+#### SaaS：Software
 
 これまでパッケージ製品として提供されていたソフトウェアを，インターネット経由でサービスとして提供・利用する形態
 
 例:Gmail，Yahooメール
 
-#### PaaS:Platform
+#### PaaS：Platform
 
 アプリケーションソフトが稼働するためのハードウェアやOSなどのプラットフォーム一式を，インターネット上のサービスとして提供する形態
 
 例:Microsoft Azure，Google App Engine， Heroku，IBM Bluemix
 
-#### IaaS:Infrastructure
+#### IaaS：Infrastructure（別名HaaS：Hardware）
 
 情報システムの稼働に必要な仮想サーバをはじめとした機材やネットワークのインフラを，インターネット上のサービスとして提供する形態
 
 例:Xサーバーなどのレンタルサーバー，Amazon Elastic Compute Cloud，Google Compute Engine
-
-#### HaaS
 
 #### DaaS:Desktop
 
