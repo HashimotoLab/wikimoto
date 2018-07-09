@@ -1,5 +1,10 @@
 # Google Apps Script
 
+## TODO
+
+* [ ] スプレッドシートのセル値を自由に扱えるようになる
+* [ ] Javascript自体の知識も増やす
+
 ## Google Apps Scriptとは
 
 Many Google apps, one platform in the cloud
