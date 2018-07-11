@@ -25,7 +25,7 @@
 * [Nagabuchi](nagabuchi/README.md)
   * [固い絆に想いを寄せてビーコン](nagabuchi/iniiwosetebkon.md)
   * [もしもの時のMacでApache2](nagabuchi/moshimononomacdeapache2.md)
-  * [くだらねぇ脂質異常マン](nagabuchi/kudaraneman.md)
+  * [くだらねぇ肝機能障害マン](nagabuchi/kudaraneman.md)
 * [Tanaka](tanaka/README.md)
   * [田中の研究](tanaka/no.md)
   * [ICカードマン](tanaka/ickdoman.md)
