@@ -306,5 +306,7 @@ Physical Web自体がもともとは広告のをビーコンで飛ばすこと�
 
 {% embed data="{\"url\":\"http://west-magazine.com/shishitsuijyou-2454\",\"type\":\"link\",\"title\":\"【脂質異常症】健診で脂質の再検査が出たので調べてみました\",\"description\":\"  先日、会社で受けた健康診断の結果が手元に届きました。過去の健康診断ではオールA判定の健康だけが取…\",\"icon\":{\"type\":\"icon\",\"url\":\"http://west-magazine.com/wp-content/themes/stinger3ver20140327/images/rogo.ico\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"http://west-magazine.com/wp-content/uploads/2015/07/mizuibo\_taitle\_1024.jpg?w=640\",\"width\":1024,\"height\":682,\"aspectRatio\":0.666015625}}" %}
 
+脂質異常症とか雑魚のすること
 
+時代は肝機能障害
 
