@@ -62,6 +62,8 @@ $ sudo apt-get rpi-update
 
 大体終わったら，再起動しといた方が良い
 
+## Tips
+
 ### プロキシを通してブラウジング
 
 ```bash
@@ -76,5 +78,46 @@ widthとheightの部分に好きなサイズを入れる
 $ vncserver -geometry widthxheight
 ```
 
+### tmuxの導入
 
+1. ホームディレクトリorセットアップ用にディレクトリを作成し移動する（ここでは作業ディレクトリをtmux\_dirとする）
+
+```bash
+$ mkdir tmux_dir
+$ cd tmux_dir
+```
+
+2. 依存ライブラリであるlibeventを導入する（githubのreleaseページでバージョンを確認した方が良い）
+
+```bash
+$ wget https://github.com/libevent/releases/download/release-2.1.8-stable/libevent-2.1.8-stable.tar.gz
+$ tar xvzf libevent-2.1.8-stable.tar.gz
+$ cd libevent-2.1.8-stable
+$ ./configure
+$ make
+$ sudo make install
+$ sudo ldconfig
+```
+
+3. ncuresesも導入する
+
+```bash
+$ sudo apt-get install libncurses5-dev
+```
+
+4. tmuxを導入する（githubのreleaseページでバージョンを確認した方が良い）
+
+```bash
+$ cd ~/tmux_dir
+$ wget https://github.com/tmux/tmux/releases/download/2.7/tmux-2.7.tar.gz
+$ tar xvzf tmux-2.7.tar.gz
+$ cd tmux-2.7
+$ ./configure
+$ make
+$ sudo make install
+```
+
+**参考**
+
+{% embed data="{\"url\":\"https://qiita.com/tenmihi/items/adc7861e69c4418bb1e6\",\"type\":\"link\",\"title\":\"Raspbianにtmuxを導入する - Qiita\",\"description\":\"\#\# やりたいこと Raspbianでもtmux使ってハッピーになりたい  \#\# 導入を行った環境 \* Raspberry Pi 3 Model B+ \* Raspbian 8.0  \#\# 手順  \#\#\# 準備 セットアップ用にフォル...\",\"icon\":{\"type\":\"icon\",\"url\":\"https://cdn.qiita.com/assets/favicons/public/apple-touch-icon-f9a6afad761ec2306e10db2736187c8b.png\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://cdn.qiita.com/assets/qiita-fb-2887e7b4aad86fd8c25cea84846f2236.png\",\"width\":200,\"height\":200,\"aspectRatio\":1}}" %}
 
