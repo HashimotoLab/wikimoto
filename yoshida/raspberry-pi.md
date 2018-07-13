@@ -79,7 +79,7 @@ $ mkdir tmux_dir
 $ cd tmux_dir
 ```
 
-2. 依存ライブラリであるlibeventを導入する（githubのreleaseページでバージョンを確認した方が良い）
+1. 依存ライブラリであるlibeventを導入する（githubのreleaseページでバージョンを確認した方が良い）
 
 ```bash
 $ wget https://github.com/libevent/releases/download/release-2.1.8-stable/libevent-2.1.8-stable.tar.gz
@@ -91,13 +91,13 @@ $ sudo make install
 $ sudo ldconfig
 ```
 
-3. ncuresesも導入する
+1. ncuresesも導入する
 
 ```bash
 $ sudo apt-get install libncurses5-dev
 ```
 
-4. tmuxを導入する（githubのreleaseページでバージョンを確認した方が良い）
+1. tmuxを導入する（githubのreleaseページでバージョンを確認した方が良い）
 
 ```bash
 $ cd ~/tmux_dir
@@ -111,7 +111,11 @@ $ sudo make install
 
 ### OpenCVの導入
 
-https://sites.google.com/site/memorandumjavaandalgorithm/raspberry-pi-jiang-zuo-opencv3
+以下のサイトに従って導入できる
+
+OpenCVのバージョンは好みのを入れる
+
+{% embed data="{\"url\":\"https://sites.google.com/site/memorandumjavaandalgorithm/raspberry-pi-jiang-zuo-opencv3\",\"type\":\"link\",\"title\":\"Raspberry Pi講座 Python3 + OpenCV3\(環境構築編\) - Hobby robot laboratory\",\"icon\":{\"type\":\"icon\",\"url\":\"https://ssl.gstatic.com/sites/p/4b55b0/system/app/images/apple-touch-icon.png\",\"aspectRatio\":0}}" %}
 
 ## Tips
 
@@ -128,7 +132,6 @@ widthとheightの部分に好きなサイズを入れる
 ```bash
 $ vncserver -geometry widthxheight
 ```
-
 
 **参考**
 
