@@ -68,21 +68,7 @@ $ sudo apt-get rpi-update
 
 大体終わったら，再起動しといた方が良い
 
-## Tips
-
-### プロキシを通してブラウジング
-
-```bash
-$ chromium-browser --proxy-server="wproxy.akita-u.ac.jp:8080"
-```
-
-### vncserverの起動
-
-widthとheightの部分に好きなサイズを入れる
-
-```bash
-$ vncserver -geometry widthxheight
-```
+## 各パッケージの導入
 
 ### tmuxの導入
 
@@ -122,6 +108,27 @@ $ ./configure
 $ make
 $ sudo make install
 ```
+
+### OpenCVの導入
+
+https://sites.google.com/site/memorandumjavaandalgorithm/raspberry-pi-jiang-zuo-opencv3
+
+## Tips
+
+### プロキシを通してブラウジング
+
+```bash
+$ chromium-browser --proxy-server="wproxy.akita-u.ac.jp:8080"
+```
+
+### vncserverの起動
+
+widthとheightの部分に好きなサイズを入れる
+
+```bash
+$ vncserver -geometry widthxheight
+```
+
 
 **参考**
 
