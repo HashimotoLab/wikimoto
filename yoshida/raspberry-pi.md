@@ -1,3 +1,7 @@
+---
+description: Raspberry Piの初期設定・諸々のパッケージ導入について
+---
+
 # Raspberry Pi
 
 ## RaspbianOSのダウンロード
@@ -20,7 +24,9 @@ Macだとdisk utilityアプリで初期化・マウント解除出来る
 
 書き込みを行う前に，
 
-`df -h`
+```bash
+$ df -h
+```
 
 でSDカードのパスをちゃんと見ておく
 
