@@ -138,6 +138,18 @@ Exchangeで指定可能な配送方法は以下の様なものがある．
 * Topic
   * Directと同じで，メッセージにrouting keyを指定して，そのkeyを元に配送するMessage Queueを選択する．
 
+### CoAP（Constrained Application Protocol）
+
+リクエスト/レスポンスモデルでのIoTデバイスとの通信に適したプロトコルであり，簡易的なHTTPという役割を持つ
+
+UDPを用いているためレスポンスがシンプルであり，HTTPヘッダは50byteあるのに対し，CoAPは4byteである
+
+シーケンスの比較は以下の図の通りである
+
+![HTTP](../.gitbook/assets/20120411185018.png)
+
+![CoAP](../.gitbook/assets/20120411185017.png)
+
 ## 無線通信規格
 
 **PAN（Personal Area Network）**

@@ -13,6 +13,7 @@
   * [Raspberry Pi](yoshida/raspberry-pi.md)
   * [Node-RED](yoshida/node-red.md)
   * [プロトコル・無線通信規格・XaaS](yoshida/purotokoruxaas.md)
+  * [IoT](yoshida/iot.md)
 * [Kinno](kinno/README.md)
   * [Study\_ruby](kinno/study_ruby.md)
   * [latex](kinno/latex.md)
