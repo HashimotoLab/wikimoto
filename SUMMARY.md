@@ -36,4 +36,5 @@
 * [Vim](vim/README.md)
   * [Vimのすすめ](vim/vimnosusume.md)
 * [Slack](slack.md)
+* [ベタープログラマを読んで](betpuroguramawonde.md)
 
