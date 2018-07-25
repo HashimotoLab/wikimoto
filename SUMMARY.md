@@ -23,6 +23,8 @@
   * [sumimasen](kinno/sumimasen.md)
   * [direction\_wrapper](kinno/direction_wrapper.md)
   * [jupyter](kinno/jupyter.md)
+* [Funaki](funaki/README.md)
+  * [研究](funaki/yan-jiu.md)
 * [Nagabuchi](nagabuchi/README.md)
   * [固い絆に想いを寄せてビーコン](nagabuchi/iniiwosetebkon.md)
   * [もしもの時のMacでApache2](nagabuchi/moshimononomacdeapache2.md)
