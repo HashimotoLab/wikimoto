@@ -255,6 +255,20 @@ $ git log --diff-filter=D --summary
 $ git checkout [hash]^ -- [filepath]
 ```
 
+#### ファイルをgitの管理対象から除外する
+
+* ファイルごと削除する場合
+
+```bash
+git rm [filepath]
+```
+
+* ファイルを残したまま管理から除外する場合
+
+```bash
+git rm --cached [filepath]
+```
+
 ## バイナリ文章フォーマットの差分を取る
 
 officeやpdfのようなバイナリ文章フォーマットの差分を`git diff`で表示する
