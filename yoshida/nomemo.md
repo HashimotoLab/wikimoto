@@ -58,4 +58,24 @@ function sendHttpPost(){
 微妙なものしかなかった
 
 
+## 2018.8.2
+
+### 温湿度の可視化 
+
+1. MESHからIFTTTを介してGoole スプレッドシートへ書き込む
+2. APIを叩いてスプレッドシートの中身を入手
+3. matplotlibを用いてグラフ化
+
+![](../.gitbook/assets/temp_humi.png)
+
+### 参考  
+
+* pythonでスプレッドシートを扱う  
+
+https://qiita.com/akabei/items/0eac37cb852ad476c6b9
+
+* matplotlibで複数のグラフを扱う  
+
+https://qiita.com/ynakayama/items/68eff3cb146181329b48
+
 
