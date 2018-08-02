@@ -66,7 +66,7 @@ function sendHttpPost(){
 2. APIを叩いてスプレッドシートの中身を入手
 3. matplotlibを用いてグラフ化
 
-![](../.gitbook/assets/temp_humi.png)
+![温湿度](../.gitbook/assets/temp_humi.png)
 
 ### 参考  
 
