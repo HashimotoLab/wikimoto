@@ -23,6 +23,7 @@
   * [sumimasen](kinno/sumimasen.md)
   * [direction\_wrapper](kinno/direction_wrapper.md)
   * [jupyter](kinno/jupyter.md)
+  * [setup Python environment by venv](kinno/python_environment.md)
 * [Funaki](funaki/README.md)
   * [研究](funaki/yan-jiu.md)
 * [Nagabuchi](nagabuchi/README.md)
