@@ -14,19 +14,19 @@ function getMail() {
   // 指定した件名のスレッドを検索して取得
   var raspiThreads = GmailApp.search(FindSubjectRaspberry, 0, 5);
   var meshThreads = GmailApp.search(FindSubjectMESH, 0, 5);
-  
+
   // スレッドからメールを取得し二次元配列に格納
   var raspiMessages = GmailApp.getMessagesForThreads(raspiThreads);
   var meshMessages = GmailApp.getMessagesForThreads(meshThreads);
-  
+
   for(var i in raspiMessages){
     for(var j in raspiMessages[i]){
       // スターがないメッセージのみ処理
       if(!raspiMessages[i][j].isStarred() && !meshMessages[i][j].isStarred()){
-        
+
         // IFTTTでメールを送る
         sendHttpPost()
-        
+
         // 処理済みのメッセージにスターをつける
         raspiMessages[i][j].star();
         meshMessages[i][j].star();
@@ -40,7 +40,7 @@ function sendHttpPost(){
       {
         "method" : "post",
       };
-  
+
   UrlFetchApp.fetch("https://maker.ifttt.com/trigger/event/with/key/api_key", options);
 }
 ```
@@ -57,25 +57,23 @@ function sendHttpPost(){
 
 微妙なものしかなかった
 
-
 ## 2018.8.2
 
-### 温湿度の可視化 
+### 温湿度の可視化
 
 1. MESHからIFTTTを介してGoole スプレッドシートへ書き込む
 2. APIを叩いてスプレッドシートの中身を入手
 3. matplotlibを用いてグラフ化
 
-![温湿度](../.gitbook/assets/temp_humi.png)
+![&#x6E29;&#x6E7F;&#x5EA6;](../.gitbook/assets/temp_humi.png)
 
-### 参考  
+### 参考
 
 * pythonでスプレッドシートを扱う  
 
-https://qiita.com/akabei/items/0eac37cb852ad476c6b9
+[https://qiita.com/akabei/items/0eac37cb852ad476c6b9](https://qiita.com/akabei/items/0eac37cb852ad476c6b9)
 
 * matplotlibで複数のグラフを扱う  
 
-https://qiita.com/ynakayama/items/68eff3cb146181329b48
-
+[https://qiita.com/ynakayama/items/68eff3cb146181329b48](https://qiita.com/ynakayama/items/68eff3cb146181329b48)
 
