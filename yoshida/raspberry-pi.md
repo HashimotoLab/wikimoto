@@ -61,7 +61,7 @@ apt-getのアップデート，アップグレード，本体のファームウ�
 $ sudo apt-get update
 $ sudo apt-get upgrade
 $ sudo apt-get dist-upgrade
-$ sudo apt-get rpi-update
+$ sudo rpi-update
 ```
 
 ぼちぼち時間かかるかも
