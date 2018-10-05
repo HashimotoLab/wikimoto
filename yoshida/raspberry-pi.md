@@ -82,7 +82,7 @@ $ cd tmux_dir
 1. 依存ライブラリであるlibeventを導入する（githubのreleaseページでバージョンを確認した方が良い）
 
 ```bash
-$ wget https://github.com/libevent/releases/download/release-2.1.8-stable/libevent-2.1.8-stable.tar.gz
+$ wget https://github.com/libevent/libevent/releases/download/release-2.1.8-stable/libevent-2.1.8-stable.tar.gz
 $ tar xvzf libevent-2.1.8-stable.tar.gz
 $ cd libevent-2.1.8-stable
 $ ./configure
