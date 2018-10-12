@@ -59,5 +59,5 @@ IoTのためのビジュアルツールと呼ばれる
 * Node-Redで極楽コンピュータ・プログラミング, CQ出版社  
 * つないでつないでプログラミング Node-REDでつくる初めてのアプリ, リックテレコム  
 
-{% embed data="{\"url\":\"https://qiita.com/zuhito/items/e9abfd6f1ba188f908ed\",\"type\":\"link\",\"title\":\"目からウロコ！Node-REDのデザインパターン10選 - Qiita\",\"description\":\"私が\[Node-RED\]\(http://nodered.jp\)を使い始めて4カ月が経ちました。開発をしていると、Node-REDには単にノードを横に繋いでゆくだけではなく、ノードの接続関係を活用したデザインパターンが沢山あることに気が...\",\"icon\":{\"type\":\"icon\",\"url\":\"https://cdn.qiita.com/assets/favicons/public/apple-touch-icon-f9a6afad761ec2306e10db2736187c8b.png\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://cdn.qiita.com/assets/qiita-fb-2887e7b4aad86fd8c25cea84846f2236.png\",\"width\":200,\"height\":200,\"aspectRatio\":1}}" %}
+{% embed url="https://qiita.com/zuhito/items/e9abfd6f1ba188f908ed" %}
 

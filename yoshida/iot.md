@@ -19,7 +19,7 @@ description: IoTそのものの勉強
 
 ![](../.gitbook/assets/20180314_1%20%281%29.png)
 
-{% embed data="{\"url\":\"https://www.idcjapan.co.jp/Press/Current/20180314Apr.html\",\"type\":\"link\",\"title\":\"国内IoT市場 ユースケース（用途）別／産業分野別予測を発表\",\"icon\":{\"type\":\"icon\",\"url\":\"https://www.idcjapan.co.jp/img/favicon.ico\",\"aspectRatio\":0}}" %}
+{% embed url="https://www.idcjapan.co.jp/Press/Current/20180314Apr.html" %}
 
 ### 問題点
 

@@ -115,7 +115,7 @@ $ sudo make install
 
 OpenCVのバージョンは好みのを入れる
 
-{% embed data="{\"url\":\"https://sites.google.com/site/memorandumjavaandalgorithm/raspberry-pi-jiang-zuo-opencv3\",\"type\":\"link\",\"title\":\"Raspberry Pi講座 Python3 + OpenCV3\(環境構築編\) - Hobby robot laboratory\",\"icon\":{\"type\":\"icon\",\"url\":\"https://ssl.gstatic.com/sites/p/4b55b0/system/app/images/apple-touch-icon.png\",\"aspectRatio\":0}}" %}
+{% embed url="https://sites.google.com/site/memorandumjavaandalgorithm/raspberry-pi-jiang-zuo-opencv3" %}
 
 ## Tips
 
@@ -135,5 +135,5 @@ $ vncserver -geometry widthxheight
 
 **参考**
 
-{% embed data="{\"url\":\"https://qiita.com/tenmihi/items/adc7861e69c4418bb1e6\",\"type\":\"link\",\"title\":\"Raspbianにtmuxを導入する - Qiita\",\"description\":\"\#\# やりたいこと Raspbianでもtmux使ってハッピーになりたい  \#\# 導入を行った環境 \* Raspberry Pi 3 Model B+ \* Raspbian 8.0  \#\# 手順  \#\#\# 準備 セットアップ用にフォル...\",\"icon\":{\"type\":\"icon\",\"url\":\"https://cdn.qiita.com/assets/favicons/public/apple-touch-icon-f9a6afad761ec2306e10db2736187c8b.png\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://cdn.qiita.com/assets/qiita-fb-2887e7b4aad86fd8c25cea84846f2236.png\",\"width\":200,\"height\":200,\"aspectRatio\":1}}" %}
+{% embed url="https://qiita.com/tenmihi/items/adc7861e69c4418bb1e6" %}
 

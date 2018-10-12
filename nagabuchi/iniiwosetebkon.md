@@ -42,7 +42,7 @@ $ PyBeacon -t                            #停止
 
 node.jsとnpmを使うからダウンロードして、どうぞ
 
-{% embed data="{\"url\":\"http://nodejs.org/\",\"type\":\"link\",\"title\":\"Node.js\",\"icon\":{\"type\":\"icon\",\"url\":\"https://nodejs.org/static/favicon.png\",\"width\":32,\"height\":32,\"aspectRatio\":1},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://nodejs.org/static/images/logo-hexagon-card.png\",\"width\":224,\"height\":256,\"aspectRatio\":1.1428571428571428}}" %}
+{% embed url="http://nodejs.org/" %}
 
 
 
@@ -191,15 +191,15 @@ URL発信はLEDに2度URLが流れた後にレバーを押し、成功するとL
 
 更に発展
 
-{% embed data="{\"url\":\"https://syncer.jp/how-to-use-geolocation-api\",\"type\":\"link\",\"title\":\"JavaScriptで位置情報を取得する方法\(Geolocation API\)\",\"description\":\"スマートフォンなどでユーザーの現在地を取得する方法を、JavaScriptをサンプルに解説。\",\"icon\":{\"type\":\"icon\",\"url\":\"https://syncer.jp/android-chrome-192x192.png\",\"width\":192,\"height\":192,\"aspectRatio\":1},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://syncer.jp/storage/javascript/how-to-use-geolocation-api/static/dst/eyecatch\_og.png\",\"width\":600,\"height\":315,\"aspectRatio\":0.525}}" %}
+{% embed url="https://syncer.jp/how-to-use-geolocation-api" %}
 
 #### ※超注意
 
 研究室のHTML5の本は2011年のだから書いてないんだけど今だとGeolocation APIを外部から使うことはできないよ。使うためにはsecureなWebページにするしかない。http:からhttps:にするにはかなり面倒くさい申請が必要だけどやりたいって人はがんばって。
 
-{% embed data="{\"url\":\"https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only\",\"type\":\"link\",\"title\":\"Geolocation API Removed from Unsecured Origins in Chrome 50  \|  Web        \|  Google Developers\",\"description\":\"Starting with version 50, Chrome no longer supports the HTML5 Geolocation API over non-secure connections.\",\"icon\":{\"type\":\"icon\",\"url\":\"https://developers.google.com/\_static/ef5182aa39/images/touch-icon.png\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://developers.google.com/web/images/social-webfu-16x9.png\",\"width\":1200,\"height\":675,\"aspectRatio\":0.5625}}" %}
+{% embed url="https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only" %}
 
-{% embed data="{\"url\":\"https://wpstorelocator.co/document/html-5-geolocation-not-working/\",\"type\":\"link\",\"title\":\"HTML 5 Geolocation Not Working – WP Store Locator\"}" %}
+{% embed url="https://wpstorelocator.co/document/html-5-geolocation-not-working/" %}
 
 #### 動的ビーコン\(ストップウォッチ/タイマー的な時間\)
 
@@ -278,6 +278,60 @@ except:
 
 自分がやった限りでは仮想空間だとBluetoothモジュールを認識しない
 
+#### 動的ビーコン\(位置情報\)
+
+まず位置情報を取得する
+
+Workflowを使った
+
+３箇所取得した　誤差は40±10m
+
+取得した座標をDropboxに保存\(Documents.txt\)
+
+{% embed url="https://www.dropbox.com/" %}
+
+あとはサーバー側でDropboxの中を探るプログラムを動かす
+
+```python
+import pandas as pd
+import subprocess
+from time import sleep
+import datetime
+
+argsgoogleStart = ['PyBeacon', '-u', 'https://goo.gl/83dwiu']
+argsyahooStart = ['PyBeacon', '-u', 'https://goo.gl/EDPB1M']
+argsakitauStart= ['PyBeacon', '-u', 'https://goo.gl/sCe499']
+argsStop = ['PyBeacon', '-t']
+
+Clat = 39.727257
+Clng = 140.134182
+
+while(1):
+    lst = pd.read_csv("/Users/todate/Dropbox/Documents.txt").values.tolist()
+    hlat,hlng = lst[0]
+    Hlat = round(hlat, 6)
+    Hlng = round(hlng, 6)
+    flat = abs(round(Clat-Hlat, 6)) * 1000000
+    flng = abs(round(Clng-Hlng, 6)) * 1000000
+    lat = int(flat)
+    lng = int(flng)
+
+    if lat in range(0,1020) and lng in range(0,1020):
+        res = subprocess.check_call(argsgoogleStart)
+        sleep(60)
+
+    else:
+        res = subprocess.check_call(argsakitauStart)
+        sleep(60)
+    res = subprocess.check_call(argsStop)
+```
+
+手形キャンパスを中心座標にして現在地と差分をとって範囲の限定をしてる
+
+1分ごとにDropbox内のDocuments.txtを探る
+
+範囲内ならhttps://goo.gl/83dwiuを発信　範囲外ならhttps://goo.gl/sCe499を発信
+
 ## 作品案
 
 Physical Webだとスマートデバイスに強制的にURLのメタデータをプッシュ通知できたけど今はできない。受信側が能動的に見るサービスにしなければならない。
@@ -296,11 +350,30 @@ Physical Web自体がもともとは広告のをビーコンで飛ばすこと�
 
 企業広告の手段としてインターネットを利用することが定着している
 
-{% embed data="{\"url\":\"http://www.soumu.go.jp/johotsusintokei/whitepaper/ja/h27/html/nc121240.html\",\"type\":\"link\",\"title\":\"総務省｜平成27年版 情報通信白書｜広告手段としてのインターネットの普及\",\"icon\":{\"type\":\"icon\",\"url\":\"http://www.soumu.go.jp/favicon.ico\",\"aspectRatio\":0}}" %}
+{% embed url="http://www.soumu.go.jp/johotsusintokei/whitepaper/ja/h27/html/nc121240.html" %}
 
 IoTを用いてモノとインターネット広告をつなげる
 
-### 目的
+
+
+## 位置情報確認実験
+
+擬似的なルートを選定
+
+* 環状ルート
+* 直線ルート
+* バス停留所を追うルート
+* 秋田-四ツ小屋間\(映画見がてら\)
+
+先にアプリで位置情報を取ってきて, 持ち帰った位置情報を順番に更新して確認するのがいいかも
+
+テザリングはきつそう　でも一番確実なのはテザリングでiPad
+
+androidアプリで使えそうなのを選定
+
+
+
+
 
 
 
@@ -308,7 +381,7 @@ IoTを用いてモノとインターネット広告をつなげる
 
 わたしはD判定
 
-{% embed data="{\"url\":\"http://west-magazine.com/shishitsuijyou-2454\",\"type\":\"link\",\"title\":\"【脂質異常症】健診で脂質の再検査が出たので調べてみました\",\"description\":\"  先日、会社で受けた健康診断の結果が手元に届きました。過去の健康診断ではオールA判定の健康だけが取…\",\"icon\":{\"type\":\"icon\",\"url\":\"http://west-magazine.com/wp-content/themes/stinger3ver20140327/images/rogo.ico\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"http://west-magazine.com/wp-content/uploads/2015/07/mizuibo\_taitle\_1024.jpg?w=640\",\"width\":1024,\"height\":682,\"aspectRatio\":0.666015625}}" %}
+{% embed url="http://west-magazine.com/shishitsuijyou-2454" %}
 
 脂質異常症とか雑魚のすること
 

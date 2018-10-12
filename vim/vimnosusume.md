@@ -24,7 +24,7 @@ $ sudo make install
 
 ## 聖典
 
-{% embed data="{\"url\":\"https://postd.cc/?s=vim-galore\",\"type\":\"link\",\"title\":\"Vim-galore \| POSTD\",\"icon\":{\"type\":\"icon\",\"url\":\"https://postd.cc/app-icon.png\",\"aspectRatio\":0}}" %}
+{% embed url="https://postd.cc/?s=vim-galore" %}
 
 素のVimで出来ることが体系立てて丁寧に説明されています
 
@@ -40,23 +40,23 @@ $ vimtutor
 
 プラグイン検索サービス
 
-{% embed data="{\"url\":\"https://vimawesome.com/\",\"type\":\"link\",\"title\":\"Vim Awesome\",\"description\":\"Awesome Vim plugins from across the universe\",\"icon\":{\"type\":\"icon\",\"url\":\"https://vimawesome.com/static/favicon.ico\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://vimawesome.com/static/img/og.png\",\"width\":796,\"height\":416,\"aspectRatio\":0.5226130653266332}}" %}
+{% embed url="https://vimawesome.com/" %}
 
 ### プラグインマネージャー
 
 #### dein.vim
 
-{% embed data="{\"url\":\"https://github.com/Shougo/dein.vim\",\"type\":\"link\",\"title\":\"Shougo/dein.vim\",\"description\":\"dein.vim - :zap: Dark powered Vim/Neovim plugin manager\",\"icon\":{\"type\":\"icon\",\"url\":\"https://github.com/fluidicon.png\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://avatars3.githubusercontent.com/u/41495?s=400&v=4\",\"width\":400,\"height\":400,\"aspectRatio\":1}}" %}
+{% embed url="https://github.com/Shougo/dein.vim" %}
 
 ### ファイラ
 
 #### NERDTree
 
-{% embed data="{\"url\":\"https://github.com/scrooloose/nerdtree\",\"type\":\"link\",\"title\":\"scrooloose/nerdtree\",\"description\":\"nerdtree - A tree explorer plugin for vim.\",\"icon\":{\"type\":\"icon\",\"url\":\"https://github.com/fluidicon.png\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://avatars1.githubusercontent.com/u/1671?s=400&v=4\",\"width\":400,\"height\":400,\"aspectRatio\":1}}" %}
+{% embed url="https://github.com/scrooloose/nerdtree" %}
 
 #### vimfiler
 
-{% embed data="{\"url\":\"https://github.com/Shougo/vimfiler.vim\",\"type\":\"link\",\"title\":\"Shougo/vimfiler.vim\",\"description\":\"vimfiler.vim - :file\_folder: Powerful file explorer implemented by Vim script\",\"icon\":{\"type\":\"icon\",\"url\":\"https://github.com/fluidicon.png\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://avatars3.githubusercontent.com/u/41495?s=400&v=4\",\"width\":400,\"height\":400,\"aspectRatio\":1}}" %}
+{% embed url="https://github.com/Shougo/vimfiler.vim" %}
 
 ## Tips
 
