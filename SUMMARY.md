@@ -26,6 +26,7 @@
   * [setup Python environment by venv](kinno/python_environment.md)
   * [python tips](kinno/python_tips.md)
   * [nested](kinno/nested/)
+    * [nested_file](kinno/nested/tested_file.md)
 * [Funaki](funaki/README.md)
   * [研究](funaki/yan-jiu.md)
 * [Nagabuchi](nagabuchi/README.md)
