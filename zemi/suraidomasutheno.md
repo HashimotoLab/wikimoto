@@ -1,4 +1,4 @@
-# スライドマスターへの道
+# Road to Slide Master
 
 ### スライドのサイズ
 

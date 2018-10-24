@@ -1,4 +1,4 @@
-# Gitbookのgit化
+# About GitBook
 
 ## Githubアカウントの作成
 
