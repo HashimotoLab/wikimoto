@@ -192,11 +192,15 @@ funcを適用したパラメータの各行
 
 ## 使用例
 
-各パラメータはDatオブジェクトのインスタンス変数の参照によって取り出す．
+モジュールインポートの際には特に名前空間にバインドせず直接`Dat`クラスをインポートする．
 
 ```python
 from proposal_packages.dat_utils import Dat
+```
 
+各パラメータはDatオブジェクトのインスタンス変数の参照によって取り出す．
+
+```python
 dat = Dat("to/datfile/sample.dat")
 
 # 各パラメータを取り出す
