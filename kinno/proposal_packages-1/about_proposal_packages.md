@@ -1,4 +1,4 @@
-# proposal\_packages
+# about proposal packages
 
 今後使う人がいるのか分かりませんが，自分への備忘録も兼ねて
 
@@ -22,3 +22,4 @@ proposal\_packagesは研究で使用する種々の機能をPythonのモジュ�
 * **drawing.py** モデルデータのdatファイルと位置座標csvファイルを読み込んでモデルデータを描画するライブラリ
 * **gridgraph.py** 格子グラフの生成と描画を行うライブラリ
 * **graphillion\_utils.py** Graphillionにないがよく使う関数をまとめたライブラリ 作っている途中
+

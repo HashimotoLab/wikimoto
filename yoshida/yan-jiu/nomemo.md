@@ -4,7 +4,7 @@
 
 ### 別々なデバイスからの通知のAND化の提案
 
-![](../.gitbook/assets/and_circuit.png)
+![](../../.gitbook/assets/and_circuit.png)
 
 ```javascript
 var FindSubjectRaspberry = 'subject:(raspberrypi) ';
@@ -65,7 +65,7 @@ function sendHttpPost(){
 2. APIを叩いてスプレッドシートの中身を入手
 3. matplotlibを用いてグラフ化
 
-![&#x6E29;&#x6E7F;&#x5EA6;](../.gitbook/assets/temp_humi.png)
+![&#x6E29;&#x6E7F;&#x5EA6;](../../.gitbook/assets/temp_humi.png)
 
 ### 参考
 

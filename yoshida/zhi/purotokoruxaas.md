@@ -90,7 +90,7 @@ HTMLなどのコンテンツの送受信に用いられる通信プロトコル
 | Subscriber | メッセージを受け取る（購読者） |
 | Broker | メッセージを仲介する（仲介者） |
 
-![](../.gitbook/assets/mqtt_model.png)
+![](../../.gitbook/assets/mqtt_model.png)
 
 #### Pub/Sub型データ配信モデル
 
@@ -124,7 +124,7 @@ Messageの大まかな流れ
 2. ExchangeはBindingに基づいて，Messageを適切なMessage Queueに引き渡す．
 3. Consumer Applicationによって，Message QueueからMessageが取り出される．
 
-![](../.gitbook/assets/amqp.png)
+![](../../.gitbook/assets/amqp.png)
 
 #### Exchangeについて
 
@@ -146,9 +146,9 @@ UDPを用いているためレスポンスがシンプルであり，HTTPヘッ�
 
 シーケンスの比較は以下の図の通りである
 
-![HTTP](../.gitbook/assets/20120411185018.png)
+![HTTP](../../.gitbook/assets/20120411185018.png)
 
-![CoAP](../.gitbook/assets/20120411185017.png)
+![CoAP](../../.gitbook/assets/20120411185017.png)
 
 ## 無線通信規格
 
@@ -180,7 +180,7 @@ Wi-Fiが約100mの通信距離を持つのに対して，数mから数十m程度
 
 Bluetoothや無線LAN，LTEは，長距離伝送や低消費電力，低コスト運用といったIoT/M2Mで求められる要件を全て満たすものでないため，それらを満たすために考案された．
 
-![](../.gitbook/assets/lpwa.jpg)
+![](../../.gitbook/assets/lpwa.jpg)
 
 有名なものとして，SIGFOX，LoRaWAN，Wi-SUN，NB-IoTといったものがある．
 
@@ -249,7 +249,7 @@ Xの部分は未知の値を指し，SaaS，PaaS，IaaS，HaaSなどある
 
 例:Microsoft Virtual Desktop，IBM Smart Business Desktop
 
-![](../.gitbook/assets/report_01_zu01.png)
+![](../../.gitbook/assets/report_01_zu01.png)
 
 
 

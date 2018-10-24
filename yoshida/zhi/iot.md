@@ -17,7 +17,7 @@ description: IoTそのものの勉強
 
 国内IoT市場は2022年まで年間平均成長率14.9%で成長し，市場規模は12兆円に達する
 
-![](../.gitbook/assets/20180314_1%20%281%29.png)
+![](../../.gitbook/assets/20180314_1%20%281%29.png)
 
 {% embed url="https://www.idcjapan.co.jp/Press/Current/20180314Apr.html" %}
 

@@ -1,4 +1,4 @@
-# dat\_utils.py
+# dat\_utils
 
 ## 概要
 
@@ -73,7 +73,7 @@ param : DK :d:=
 
 **arguments:**
 
-* datfile\(string\)  
+* datfile\(string\)
 
   datファイルのパス
 
@@ -83,7 +83,7 @@ param : DK :d:=
 
 **arguments**
 
-* param\(strinig\)  
+* param\(strinig\)
 
   `self.__dk`，`self.__m`，`self.__n`のいずれかを指定
 
@@ -112,7 +112,7 @@ funcを適用したパラメータの各行
 
 **arguments**
 
-* param\(strinig\)  
+* param\(strinig\)
 
   パラメータ`capacity`，`cost`，`hop`のいずれかを指定
 
@@ -127,7 +127,7 @@ funcを適用したパラメータの各行
 
 **arguments**
 
-* param\(strinig\)  
+* param\(strinig\)
 
   パラメータ`traffic`を指定
 
@@ -142,7 +142,7 @@ funcを適用したパラメータの各行
 
 **arguments**
 
-* param\(strinig\)  
+* param\(strinig\)
 
   パラメータ`DK`を指定
 
@@ -154,39 +154,39 @@ funcを適用したパラメータの各行
 
 各パラメータにアクセスするためのゲッターメソッドが定義されている．ゲッターメソッドは内部で対応する`__get_attrX`を呼び出してパラメータを取り出している．
 
-* `dk(self)`  
+* `dk(self)`
 
   `return self.__get_attr1(self.__dk)`
 
-* `m(self)`  
+* `m(self)`
 
   `return self.__get_attr1(self.__m)`
 
-* `n(self)`  
+* `n(self)`
 
   `return self.__get_attr1(self.__n)`
 
-* `n(self)`  
+* `n(self)`
 
   `return self.__get_attr1(self.__n)`
 
-* `cost(self)`  
+* `cost(self)`
 
   `return self.__get_attr2(self.__cost)`
 
-* `capacity(self)`  
+* `capacity(self)`
 
   `return self.__get_attr2(self.__capacity)`
 
-* `hop(self)`  
+* `hop(self)`
 
   `return self.__get_attr2(self.__hop)`
 
-* `traffic(self)`  
+* `traffic(self)`
 
   `return self.__get_attr3(self.__start, self.__target)`
 
-* `DK(self)`  
+* `DK(self)`
 
   `return self.__get_attr4(self.__start, self.__DK)`
 
@@ -222,3 +222,4 @@ converter = lambda params: (float(params[0]), float(params[1]), float(params[2])
 for p in sample.read_params("cost", converter):
     print(p)
 ```
+
