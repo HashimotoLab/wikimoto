@@ -21,7 +21,7 @@ MATLABでデータを解析し可視化できるアプリを提供しており�
 
 センサデータはArduino，RaspberryPi，BeagleBone Black，および他のハードウェアからThingSpeakに送信可能である．
 
-```text
+```python
 import bluepy
 import time
 import sys
