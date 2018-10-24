@@ -1,31 +1,6 @@
-# proposal\_packages
+# dat\_utils.py
 
-今後使う人がいるのか分かりませんが，自分への備忘録も兼ねて
-
-## ライブラリの構成
-
-proposal\_packagesは研究で使用する種々の機能をPythonのモジュール群にまとめたパッケージです．
-
-![](../.gitbook/assets/proposal_packages_stracture.png)
-
-各ファイルの簡単な説明を以下に示す．
-
-* **sample** モジュールの使用例を示したファイルが置いてある いまのところ，方向性ラッパーのものしかない
-* **test** モジュールのユニットテストを行うテストライブラリ いまのところ，双方向方向性ラッパーのものしかない
-* **\_\_init\_\_.py** Pythonでディレクトリをモジュールとして認識させるために必要なファイル モジュールインポートする際，ここに書かれた処理が必ず実行されるが特に何も書いていない
-* **brite2dat.py** BRITEが生成するbriteファイルを研究室でよく使うGLPKのdatファイルに変換したり，networkxでトポロジを描画する際に必要な位置座標を格納したcsvファイルを生成するコマンドラインツール 内部でbrite\_utils.pyを呼び出している
-* **brite\_utils.py** briteファイルをパースしてノード，リンク，位置座標をPythonのデータ形式に変換するクラスと，それらをdatファイル，位置座標のcsvファイルに書き出す関数が定義されている
-* **dat\_utils.py** datファイルをパースして各パラメータをPythonのデータ形式に変換するクラスが定義されている
-* **directed\_graph.py** Graphillionで有向グラフに対して方向性を考慮したパス列挙を行えるようにするラッパー
-* **directed\_link\_two\_virtual\_nodes.py** Graphillionで双方向リンクを持つグラフに対して方向性を考慮したパス列挙を行えるようにするラッパー 仮想ノードを2個追加する
-* **directed\_link.py** Graphillionで双方向リンクを持つグラフに対して方向性を考慮したパス列挙を行えるようにするラッパー 仮想ノードを1個追加する
-* **drawing.py** モデルデータのdatファイルと位置座標csvファイルを読み込んでモデルデータを描画するライブラリ
-* **gridgraph.py** 格子グラフの生成と描画を行うライブラリ
-* **graphillion\_utils.py** Graphillionにないがよく使う関数をまとめたライブラリ 作っている途中
-
-## dat\_utils.py
-
-### 概要
+## 概要
 
 datファイルに記述されたパラメータをPythonのデータ形式に変換するクラス`Dat`が定義されている．  
 パーサは宣言文を元にパラメータの位置を特定するので宣言文が正しく記述されていないとパラメータを取り出すことができない．  
@@ -61,9 +36,9 @@ param : DK :d:=
 """
 ```
 
-### パラメータ
+## パラメータ
 
-#### クラス変数
+### クラス変数
 
 | variable | 概要 |
 | :--- | :--- |
@@ -72,7 +47,7 @@ param : DK :d:=
 宣言文の微妙な表記揺れを吸収するために本当は使いたくないが正規表現を使用している．  
 宣言文が統一されているなら`str.starswith`を使って文字列先頭のマッチングをしたほうがよい．
 
-#### インスタンス変数
+### インスタンス変数
 
 | variable | 概要 |
 | :--- | :--- |
@@ -90,9 +65,9 @@ param : DK :d:=
 
 `filename`以外はprivateな変数で直接名前を指定して参照できないようになっている．
 
-### メソッド
+## メソッド
 
-#### `__init__(self, datfile)`
+### `__init__(self, datfile)`
 
 コンストラクタ．初期化処理として，datファイルの読み込みとprivateなインスタンス変数に`attr_regexp`のキーの文字列を代入する．
 
@@ -102,7 +77,7 @@ param : DK :d:=
 
   datファイルのパス
 
-#### `__get_attr1(self, param)`
+### `__get_attr1(self, param)`
 
 パラメータ`dk`，`m`，`n`の値を取り出す．
 
@@ -116,7 +91,7 @@ param : DK :d:=
 
 パラメータ`dk`，`m`，`n`の値
 
-#### `read_params(self, param, func)`
+### `read_params(self, param, func)`
 
 `dk`，`m`，`n`以外のパラメータを取り出す際に使用するジェネレータ．引数`param`に対応する`attr_regexp`の正規表現を利用してパラメータの位置を特定しファイルを1行ずつ読み込んでいく．パラメータの終端は`;`のみの行なので`;`が現れたら読み込みを終了する．各行はタブ文字もしくはスペース区切りで`val1 val2`または`val1 val2 val3`と表現されている．これを区切り文字で分割し各値を格納したリストを作る．このリストを引数`func`の引数として渡すことでパラメータを様々な形式で取り出せるようになっている．
 
@@ -129,7 +104,7 @@ param : DK :d:=
 
 funcを適用したパラメータの各行
 
-#### `__get_attr2(self, param)`
+### `__get_attr2(self, param)`
 
 パラメータ`capacity`，`cost`，`hop`を取り出す．  
 これらのパラメータの各行は`node_i node_j param`の形式となっている．  
@@ -145,7 +120,7 @@ funcを適用したパラメータの各行
 
 パラメータ`capacity`，`cost`，`hop`の値
 
-#### `__get_attr3(self, param)`
+### `__get_attr3(self, param)`
 
 パラメータ`traffic`を取り出す．  
 `__get_attr2`と同様に`read_params`を呼び出している．各行に適用する関数として`lambda params: (int(params[0]), int(params[1]))`を指定している．これによって，取り出されるパラメータの各行は`int int`の形式になっている．
@@ -160,7 +135,7 @@ funcを適用したパラメータの各行
 
 パラメータ`traffic`の値
 
-#### `__get_attr4(self, param)`
+### `__get_attr4(self, param)`
 
 パラメータ`DK`を取り出す．  
 `__get_attr2`と同様に`read_params`を呼び出している．各行に適用する関数として`lambda params: (int(params[0]))`を指定している．これによって，取り出されるパラメータの各行は`int`の形式になっている．
@@ -175,7 +150,7 @@ funcを適用したパラメータの各行
 
 パラメータ`DK`の値
 
-#### ゲッターメソッド
+### ゲッターメソッド
 
 各パラメータにアクセスするためのゲッターメソッドが定義されている．ゲッターメソッドは内部で対応する`__get_attrX`を呼び出してパラメータを取り出している．
 
@@ -215,7 +190,7 @@ funcを適用したパラメータの各行
 
   `return self.__get_attr4(self.__start, self.__DK)`
 
-### 使用例
+## 使用例
 
 各パラメータはDatオブジェクトのインスタンス変数の参照によって取り出す．
 
@@ -243,4 +218,3 @@ converter = lambda params: (float(params[0]), float(params[1]), float(params[2])
 for p in sample.read_params("cost", converter):
     print(p)
 ```
-
