@@ -4,10 +4,11 @@ ESPのこと書きます
 
 ## ESPとは
 
-中国企業Espressif Systemsによって製造されている完全なTCP/IPスタックとマイクロコントローラを備えた低コストの小型WiFiモジュール  
+中国企業Espressif Systemsによって製造されている完全なTCP/IPスタックとマイクロコントローラを備えた低コストの小型WiFiモジュール
 
 シンプルな温度測定プログラム
-```
+
+```c
 #include <Wire.h>
 
 int I2CAdrs;
@@ -43,3 +44,4 @@ void loop() {
 
 }
 ```
+

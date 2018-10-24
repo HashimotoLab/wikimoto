@@ -59,5 +59,5 @@ IoTのためのビジュアルツールと呼ばれる
 * Node-Redで極楽コンピュータ・プログラミング, CQ出版社  
 * つないでつないでプログラミング Node-REDでつくる初めてのアプリ, リックテレコム  
 
-{% embed url="https://qiita.com/zuhito/items/e9abfd6f1ba188f908ed" %}
+{% embed url="https://qiita.com/zuhito/items/e9abfd6f1ba188f908ed" caption="" %}
 

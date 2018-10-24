@@ -1,7 +1,5 @@
 # Protocol/Radiocommunication/XaaS
 
-
-
 ## TODO
 
 * [ ] IoT関連のプロトコルについて知識を蓄える
@@ -252,6 +250,4 @@ Xの部分は未知の値を指し，SaaS，PaaS，IaaS，HaaSなどある
 例:Microsoft Virtual Desktop，IBM Smart Business Desktop
 
 ![](../../.gitbook/assets/report_01_zu01.png)
-
-
 

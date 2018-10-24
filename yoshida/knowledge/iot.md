@@ -19,7 +19,7 @@ description: IoTそのものの勉強
 
 ![](../../.gitbook/assets/20180314_1%20%281%29.png)
 
-{% embed url="https://www.idcjapan.co.jp/Press/Current/20180314Apr.html" %}
+{% embed url="https://www.idcjapan.co.jp/Press/Current/20180314Apr.html" caption="" %}
 
 ### 問題点
 

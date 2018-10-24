@@ -115,7 +115,7 @@ $ sudo make install
 
 OpenCVのバージョンは好みのを入れる
 
-{% embed url="https://sites.google.com/site/memorandumjavaandalgorithm/raspberry-pi-jiang-zuo-opencv3" %}
+{% embed url="https://sites.google.com/site/memorandumjavaandalgorithm/raspberry-pi-jiang-zuo-opencv3" caption="" %}
 
 ## Tips
 
@@ -135,5 +135,5 @@ $ vncserver -geometry widthxheight
 
 **参考**
 
-{% embed url="https://qiita.com/tenmihi/items/adc7861e69c4418bb1e6" %}
+{% embed url="https://qiita.com/tenmihi/items/adc7861e69c4418bb1e6" caption="" %}
 

@@ -15,13 +15,13 @@
 
 ## ThingSpeakとは
 
-ThingSpeakは，Internet of Things(IoT)プラットフォームであり，クラウドでセンサのデータを収集および保存したり，IoTアプリケーションを開発することが可能である．
+ThingSpeakは，Internet of Things\(IoT\)プラットフォームであり，クラウドでセンサのデータを収集および保存したり，IoTアプリケーションを開発することが可能である．
 
 MATLABでデータを解析し可視化できるアプリを提供しており，そのデータに基づいてアクションを実行することができる．
 
 センサデータはArduino，RaspberryPi，BeagleBone Black，および他のハードウェアからThingSpeakに送信可能である．
 
-```
+```text
 import bluepy
 import time
 import sys
@@ -104,3 +104,4 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+
