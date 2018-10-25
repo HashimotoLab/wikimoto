@@ -67,6 +67,11 @@ function sendHttpPost(){
 
 ![&#x6E29;&#x6E7F;&#x5EA6;](../../.gitbook/assets/temp_humi.png)
 
+## 2018.10.25
+
+* 高松市で見守りシステムのAI導入事例
+* 富士通の見守りシステム
+
 ### 参考
 
 * pythonでスプレッドシートを扱う  
