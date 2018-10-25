@@ -66,10 +66,11 @@ int main(void) {
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-あとは，長いオプションをつけたg++でコンパイルする．
+あとは，長いオプションをつけたg++でコンパイルする．  
+適宜エイリアスを設定して短くすると良さそう．
 
 ```bash
-$ g++ -fopenmp -I/usr/local/opt/open-mpi/include -L/usr/local/opt/open-mpi/lib -lmpi parallel_sample.c
+$ /usr/local/bin/g++-8 -fopenmp -I/usr/local/opt/open-mpi/include -L/usr/local/opt/open-mpi/lib -lmpi parallel_sample.c
 ```
 
 これを実行してみると．．．
@@ -103,7 +104,11 @@ Hello from thread 3, nthreads 4
 
 * openmpiのインストール  
 今回はhomebrew経由でインストールしたが，こうするとopenmpiをコンパイルするコンパイラがXcode経由のclangになってしまうらしい（あれだけ忌避していたのに！）  
-しかし，Macの項でCのサンプルプログラムを実行する際に，オプションで使うライブラリを明示しているので大丈夫な気もする．確信はない．
+しかし，Macの項でCのサンプルプログラムを実行する際に，オプションで使うライブラリを明示しているので大丈夫な気もする．確信はない．  
+参考になりそうなサイトを挙げておく  
+
+    * [MacでMPIとopenmpをハイブリッドにつかえる環境を構築する](https://qiita.com/himo/items/c30d83d0f7642fb3af57)
+    * [macOS Sierra で GNU gcc + MPI + OpenMP を使う.](https://qiita.com/syoyo/items/676d1e1c07aef26a49e2)
 
 * cmakeのコンパイルオプションが怪しい  
 動的ライブラリとかいうのを上手く使えるようにするオプションが無い．
@@ -122,3 +127,7 @@ Graphillionをインポートしようとしても以下の例外が発生して
 
 
 ## 参考にしたwebサイト
+
+{% embed url="https://qiita.com/kaityo256/items/ae9329dae24ea8828ae0" %}
+
+{% embed url="https://qiita.com/hinatades/items/79935d8a2a93ddabe077" %}
