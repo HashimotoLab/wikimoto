@@ -27,7 +27,7 @@
   * [proposal\_packages](kinno/proposal_packages.md)
   * [sumimasen](kinno/sumimasen.md)
   * [direction\_wrapper](kinno/direction_wrapper.md)
-  * [direction\_wrapper](kinno/install_graphillion_with_parallel_enabled.md)
+  * [install graphillion with parallel enabled](kinno/install_graphillion_with_parallel_enabled.md)
   * [jupyter](kinno/jupyter.md)
   * [setup Python environment by venv](kinno/python_environment.md)
   * [python tips](kinno/python_tips.md)
