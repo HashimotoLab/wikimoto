@@ -15,6 +15,7 @@
     * [Node-RED](yoshida/study/node-red.md)
     * [ESP](yoshida/study/esp.md)
     * [SensorTag+ThingSpeak](yoshida/study/sensortag+thingspeak.md)
+    * [IFTTT](yoshida/study/ifttt.md)
   * [Knowledge](yoshida/knowledge/README.md)
     * [Protocol/Radiocommunication/XaaS](yoshida/knowledge/purotokoruxaas.md)
     * [IoT](yoshida/knowledge/iot.md)
