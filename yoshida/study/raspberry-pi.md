@@ -1,5 +1,5 @@
 ---
-description: Raspberry Piの初期設定・諸々のパッケージ導入について
+description: Raspberry Piに関してのセットアップ，コマンド等
 ---
 
 # Raspberry Pi
@@ -116,6 +116,37 @@ $ sudo make install
 OpenCVのバージョンは好みのを入れる
 
 {% embed url="https://sites.google.com/site/memorandumjavaandalgorithm/raspberry-pi-jiang-zuo-opencv3" caption="" %}
+
+### Dropbox-uploaderの導入
+
+```bash
+# ダウンロード
+$ curl "https://raw.githubusercontent.com/andreafabrizi/Dropbox-Uploader/master/dropbox_uploader.sh" -o
+# 権限の付加
+$ chmod +x dropbox_uploader.sh
+# pathの通ったディレクトリに移動
+$ sudo mv dropbox_uploader.sh /usr/local/bin/dropbox_uploader
+# 実行
+$ dropbox_uploader
+```
+
+するとaccess tokenを求められる
+
+{% embed url="https://www.dropbox.com/developers/apps" %}
+
+ログインし，create appsでアプリを作成し，access tokenをgenerateして先ほどの求められた箇所にaccess tokenを入力
+
+#### 使い方
+
+```bash
+$ dropbox_uploader upload test.txt /test.txt
+```
+
+第1引数がオプション，第2引数がアップロードしたいファイル名，第3引数がアップロード先のディレクトリとファイル名
+
+オプションはdownload，delete，copyなどあるらしい
+
+{% embed url="https://github.com/andreafabrizi/Dropbox-Uploader/" %}
 
 ## Tips
 

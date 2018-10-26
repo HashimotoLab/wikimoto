@@ -1,4 +1,4 @@
-# 並列処理ライブラリOpenMPを有効にしたGraphillionのインストール
+# install graphillion with parallel enabled
 
 **WARNING!**
 
@@ -7,7 +7,7 @@
 ## OpenMPとGraphillion
 
 OpenMPは並列処理を可能にするライブラリでFORTRAN，C/C++で利用できる．GraphillionのメソッドはPythonで書かれているが，基盤となるZDDはOpenMPに対応したC++で記述されており並列処理の恩恵を受けることができる．  
-執筆時点でのGraphillionの最新バージョンであるv1.2において，並列化の対象になっているメソッドは以下の通り．  
+執筆時点でのGraphillionの最新バージョンであるv1.2において，並列化の対象になっているメソッドは以下の通り．
 
 * `GraphSet.graphs(constraints)`
 * `GraphSet.connected_components(vertices)`
@@ -24,7 +24,7 @@ MacのみXcode経由でインストールしたclangでもGraphillionをコン�
 
 ### Mac
 
-前節で述べている通りXcodeのclangでは並列化できないし，システムの/usr/bin/gccもOpenMPに対応していないので，homebrewからOpenMPに対応したgccをインストールする．  
+前節で述べている通りXcodeのclangでは並列化できないし，システムの/usr/bin/gccもOpenMPに対応していないので，homebrewからOpenMPに対応したgccをインストールする．
 
 ```bash
 $ brew install gcc
@@ -41,18 +41,17 @@ $ brew install openmpi --with-cxx-bindings
 最後に並列処理で使用するCPUのコア数を指定する．
 
 {% code-tabs %}
-{% code-tabs-item title=".bash_profile" %}
+{% code-tabs-item title=".bash\_profile" %}
 ```bash
 export OMP_NUM_THREADS=4 # 現在使っているMacが4コアのCPUなので4を指定した．
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-
 これでOpenMPを使う準備は整った．OpenMPに対応したプログラムを実行してみて，ちゃんと並列で動作するか確認してみる．
 
 {% code-tabs %}
-{% code-tabs-item title="parallel_sample.c" %}
+{% code-tabs-item title="parallel\_sample.c" %}
 ```c
 #include <omp.h>
 #include <stdio.h>
@@ -77,7 +76,7 @@ $ /usr/local/bin/g++-8 -fopenmp -I/usr/local/opt/open-mpi/include -L/usr/local/o
 
 {% code-tabs %}
 {% code-tabs-item title="実行結果" %}
-```
+```text
 Hello from thread 0, nthreads 4
 Hello from thread 2, nthreads 4
 Hello from thread 1, nthreads 4
@@ -88,11 +87,9 @@ Hello from thread 3, nthreads 4
 
 4つのプロセスが立ち上がり4回printf関数が呼び出されている．また，実行するたびスレッドの終了順も変わるので並列化できているっぽい．
 
-
 ### Ubuntu
 
 サーバのUbuntuにも入れたいのでそのうち書く．
-
 
 ### Windows
 
@@ -102,16 +99,10 @@ Hello from thread 3, nthreads 4
 
 長々書いたのに結局動かなくて悲しいので怪しい箇所をメモしておく
 
-* openmpiのインストール  
-今回はhomebrew経由でインストールしたが，こうするとopenmpiをコンパイルするコンパイラがXcode経由のclangになってしまうらしい（あれだけ忌避していたのに！）  
-しかし，Macの項でCのサンプルプログラムを実行する際に，オプションで使うライブラリを明示しているので大丈夫な気もする．確信はない．  
-参考になりそうなサイトを挙げておく  
-
-    * [MacでMPIとopenmpをハイブリッドにつかえる環境を構築する](https://qiita.com/himo/items/c30d83d0f7642fb3af57)
-    * [macOS Sierra で GNU gcc + MPI + OpenMP を使う.](https://qiita.com/syoyo/items/676d1e1c07aef26a49e2)
-
-* cmakeのコンパイルオプションが怪しい  
-動的ライブラリとかいうのを上手く使えるようにするオプションが無い．
+* openmpiのインストール 今回はhomebrew経由でインストールしたが，こうするとopenmpiをコンパイルするコンパイラがXcode経由のclangになってしまうらしい（あれだけ忌避していたのに！） しかし，Macの項でCのサンプルプログラムを実行する際に，オプションで使うライブラリを明示しているので大丈夫な気もする．確信はない． 参考になりそうなサイトを挙げておく
+  * [MacでMPIとopenmpをハイブリッドにつかえる環境を構築する](https://qiita.com/himo/items/c30d83d0f7642fb3af57)
+  * [macOS Sierra で GNU gcc + MPI + OpenMP を使う.](https://qiita.com/syoyo/items/676d1e1c07aef26a49e2)
+* cmakeのコンパイルオプションが怪しい 動的ライブラリとかいうのを上手く使えるようにするオプションが無い．
 
 ### ImportError!!!
 
@@ -122,12 +113,11 @@ Graphillionをインポートしようとしても以下の例外が発生して
 ### 書くこと
 
 * 環境変数CCのコンパイラを明示する
-
 * cmakeのコンパイラを明示する（環境変数CXX）
-
 
 ## 参考にしたwebサイト
 
-{% embed url="https://qiita.com/kaityo256/items/ae9329dae24ea8828ae0" %}
+{% embed url="https://qiita.com/kaityo256/items/ae9329dae24ea8828ae0" caption="" %}
 
-{% embed url="https://qiita.com/hinatades/items/79935d8a2a93ddabe077" %}
+{% embed url="https://qiita.com/hinatades/items/79935d8a2a93ddabe077" caption="" %}
+

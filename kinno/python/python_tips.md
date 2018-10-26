@@ -1,4 +1,4 @@
-# python tips
+# Python tips
 
 はえ〜ってなったtipsを書いていきます．基本的にバージョンは3.5以上です．
 
