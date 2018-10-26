@@ -72,6 +72,14 @@ function sendHttpPost(){
 * 高松市で見守りシステムのAI導入事例
 * 富士通の見守りシステム
 
+## 2018.10.26
+
+* 湿度センサ逝かれました
+* RaspberryPiにDropboxのアップローダー入れた（手順はRaspberry Piのページに）
+* cronで定期的にログをDropboxに送るようにした
+
+{% page-ref page="raspberry-pi.md" %}
+
 ### 参考
 
 * pythonでスプレッドシートを扱う  

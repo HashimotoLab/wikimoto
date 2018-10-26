@@ -1,4 +1,4 @@
-# set up Linux environment on VMWare
+# set up linux environment on vmware
 
 僕がまだB4だったころに書いたゴミ
 

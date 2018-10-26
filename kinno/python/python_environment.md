@@ -1,4 +1,4 @@
-# setup Python environment by venv
+# set up Python environment by venv
 
 ## TODO
 

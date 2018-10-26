@@ -1,4 +1,4 @@
-# Study\_ruby
+# study ruby
 
 Ruby Association Certified Ruby Programmer Silver version 2.1の対策に作った勉強資料
 

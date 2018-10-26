@@ -1,7 +1,3 @@
----
-description: IFTTTで連携できるサービスを書きます
----
-
 # IFTTT
 
 ## トリガー
