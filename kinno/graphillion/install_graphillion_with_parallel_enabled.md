@@ -169,11 +169,6 @@ $ pip3 install graphillion
 * cmakeのコンパイルオプションが怪しい 動的ライブラリとかいうのを上手く使えるようにするオプションが無い．
 
 
-### 書くこと
-
-* 環境変数CCのコンパイラを明示する
-* cmakeのコンパイラを明示する（環境変数CXX）
-
 ## 参考にしたwebサイト
 
 {% embed url="https://qiita.com/kaityo256/items/ae9329dae24ea8828ae0" caption="" %}
