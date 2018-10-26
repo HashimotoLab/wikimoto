@@ -22,7 +22,16 @@ OpenMPは並列処理を可能にするライブラリでFORTRAN，C/C++で利�
 **前提としてコンパイラはGCC使うこと．**  
 MacのみXcode経由でインストールしたclangでもGraphillionをコンパイルできるが，Appleが頑なにOpenMPに対応させないおかげで並列化できない状態でインストールされてしまう．
 
+プラットフォームごとのインストール手順をまとめていく．
+
 ### Mac
+
+#### Python
+
+使用したPythonは2.7.15と3.7で，いずれもhomebrew経由で/usr/local/bin/以下にインストールし，ビルドにはXcode経由のclangを使用した．  
+本当はOpenMPのビルドで使用するGCCコンパイラでビルドしたかったが失敗したので，やむなくMacで推奨されているXcode経由のclangでビルドした．
+
+#### OpenMPのインストール
 
 前節で述べている通りXcodeのclangでは並列化できないし，システムの/usr/bin/gccもOpenMPに対応していないので，homebrewからOpenMPに対応したgccをインストールする．  
 
@@ -88,6 +97,60 @@ Hello from thread 3, nthreads 4
 
 4つのプロセスが立ち上がり4回printf関数が呼び出されている．また，実行するたびスレッドの終了順も変わるので並列化できているっぽい．
 
+#### Graphillionのインストール
+
+**思考停止で`pip install`したいところだが，いくつか設定すべき事項がある．**
+
+pipでモジュールをインストールする際には必ず`setup.py`というスクリプト起動し，インストールに必要な手続きを行う．  
+Graphillionの`setup.py`は大きく分けて2つの処理を行っている．  
+以下では，2つのチェックの概要を示しつつOpenMPを有効にしてGraphillionをビルドするために必要な手順を説明していく．
+
+1つ目の処理はOpenMPを使用可能なコンパイラが存在するかチェックする処理である．環境変数`CC`にセットされているコンパイラでOpenMPに対応したCのプログラムをコンパイルし．その成否によってOpenMPを有効にしてGraphillionをビルドするかどうかを決定している．  
+環境変数`CC`に適切なコンパイラを指定しないと`/usr/bin/gcc`を使用してチェックを行ってしまう．前節でインストールしたOpenMP対応のGCCでビルドしたいので`CC`にGCCのC++コンパイラへのパスを設定する．
+
+{% code-tabs %}
+{% code-tabs-item title=".bash_profile" %}
+```bash
+export CC="/usr/local/bin/g++-8"
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+これで，`setup.py`はOpenMP対応のコンパイラが存在することを認識してくれる．
+
+2つ目の処理はGraphillionのビルドである．ここが1番のハマりポイントであった．  
+1つ目の処理をOpenMPを有効にして通過したのに何故かビルドでコケてしまう．これはGraphillionが使用しているビルドツールのCMakeがOpenMPに対応していないコンパイラを使ってビルドを行ってしまうことが原因である．  
+CMakeで使用するC++コンパイラは環境変数`CXX`にコンパイラへのパスを記述することによって指定できる．
+
+{% code-tabs %}
+{% code-tabs-item title=".bash_profile" %}
+```bash
+export CXX="/usr/local/bin/g++-8"
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+環境変数`CC`と`CXX`に適切なコンパイラへのパスを記述できたら準備完了である．いつもどおり`pip`からインストールする．
+
+```bash
+$ pip install graphillion
+$ pip3 install graphillion
+```
+
+### ImportError!!!
+
+長かった，本当に長かった．これでOpenMPによって並列処理が可能になったGraphilionが使えるようになります．**Python2.7.15のみで．**
+
+2.7.15のPythonで並列処理に対応したGraphillionのメソッドを呼び出してアクティビティマネージャからプロセスを確認すると，間違いなく複数スレッド（今回の環境だと4スレッド）で稼働している．
+
+ではPython3.7ではどうか．
+
+**Graphillionをインポートしようとしても以下の例外が発生してインポートに失敗する．**
+
+`ImportError: dlopen(/usr/local/lib/python3.7/site-packages/_graphillion.cpython-37m-darwin.so, 2): Symbol not found: \_\_ZNSt15basic_streambufIcSt11char_traitsIcEE4syncEv`
+
+おしまい．
+
 
 ### Ubuntu
 
@@ -113,11 +176,6 @@ Hello from thread 3, nthreads 4
 * cmakeのコンパイルオプションが怪しい  
 動的ライブラリとかいうのを上手く使えるようにするオプションが無い．
 
-### ImportError!!!
-
-Graphillionをインポートしようとしても以下の例外が発生してインポートに失敗する．
-
-`ImportError: dlopen(/usr/local/lib/python3.7/site-packages/_graphillion.cpython-37m-darwin.so, 2): Symbol not found: \_\_ZNSt15basic_streambufIcSt11char_traitsIcEE4syncEv`
 
 ### 書くこと
 
