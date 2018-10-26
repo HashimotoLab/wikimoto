@@ -19,7 +19,7 @@ OpenMPは並列処理を可能にするライブラリでFORTRAN，C/C++で利�
 
 ## OpenMPとGraphillionのインストール
 
-**前提としてCコンパイラはgcc使うこと．**  
+**前提としてコンパイラはGCC使うこと．**  
 MacのみXcode経由でインストールしたclangでもGraphillionをコンパイルできるが，Appleが頑なにOpenMPに対応させないおかげで並列化できない状態でインストールされてしまう．
 
 ### Mac
@@ -38,12 +38,12 @@ $ brew install gcc
 $ brew install openmpi --with-cxx-bindings
 ```
 
-最後に並列処理で使用するCUPのコア数を指定する．
+最後に並列処理で使用するCPUのコア数を指定する．
 
 {% code-tabs %}
 {% code-tabs-item title=".bash_profile" %}
 ```bash
-export OMP_NUM_THREADS=4 # 現在使っているMacが4コアのCUPなので4を指定した．
+export OMP_NUM_THREADS=4 # 現在使っているMacが4コアのCPUなので4を指定した．
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
