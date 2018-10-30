@@ -27,6 +27,7 @@
   * [graphillion](kinno/graphillion/README.md)
     * [direction wrapper](kinno/graphillion/direction_wrapper.md)
     * [direction wrapper benckmark](kinno/graphillion/direction_wrapper_benchmark.md)
+    * [interactive reference](kinno/graphillion/interactive_reference.md)
     * [install graphillion with parallel enabled](kinno/graphillion/install_graphillion_with_parallel_enabled.md)
   * [proposal\_packages](kinno/proposal_packages/README.md)
     * [about proposal packages](kinno/proposal_packages/about_proposal_packages.md)
