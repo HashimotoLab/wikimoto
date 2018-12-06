@@ -1,5 +1,5 @@
 ---
-description: Raspberry Piに関してのセットアップ，コマンド等
+description: Raspberry Piの初期設定・諸々のパッケージ導入について
 ---
 
 # Raspberry Pi

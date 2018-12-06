@@ -4,4 +4,5 @@
 
 面倒なのでリポジトリへのリンクを貼っておきます．
 
-{% embed url="https://github.com/N0nki/benchmark_wrapper/blob/master/benchmark.ipynb" %}
+{% embed url="https://github.com/N0nki/benchmark\_wrapper/blob/master/benchmark.ipynb" caption="" %}
+

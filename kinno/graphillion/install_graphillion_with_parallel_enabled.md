@@ -98,7 +98,7 @@ Hello from thread 3, nthreads 4
 
 #### Graphillionのインストール
 
-**思考停止で`pip install`したいところだが，いくつか設定すべき事項がある．**
+**思考停止で**`pip install`**したいところだが，いくつか設定すべき事項がある．**
 
 pipでモジュールをインストールする際には必ず`setup.py`というスクリプト起動し，インストールに必要な手続きを行う．  
 Graphillionの`setup.py`は大きく分けて2つの処理を行っている．  
@@ -108,7 +108,7 @@ Graphillionの`setup.py`は大きく分けて2つの処理を行っている．
 環境変数`CC`に適切なコンパイラを指定しないと`/usr/bin/gcc`を使用してチェックを行ってしまう．前節でインストールしたOpenMP対応のGCCでビルドしたいので`CC`にGCCのC++コンパイラへのパスを設定する．
 
 {% code-tabs %}
-{% code-tabs-item title=".bash_profile" %}
+{% code-tabs-item title=".bash\_profile" %}
 ```bash
 export CC="/usr/local/bin/g++-8"
 ```
@@ -122,7 +122,7 @@ export CC="/usr/local/bin/g++-8"
 CMakeで使用するC++コンパイラは環境変数`CXX`にコンパイラへのパスを記述することによって指定できる．
 
 {% code-tabs %}
-{% code-tabs-item title=".bash_profile" %}
+{% code-tabs-item title=".bash\_profile" %}
 ```bash
 export CXX="/usr/local/bin/g++-8"
 ```
@@ -150,7 +150,6 @@ $ pip3 install graphillion
 
 おしまい．
 
-
 ### Ubuntu
 
 サーバのUbuntuにも入れたいのでそのうち書く．
@@ -167,7 +166,6 @@ $ pip3 install graphillion
   * [MacでMPIとopenmpをハイブリッドにつかえる環境を構築する](https://qiita.com/himo/items/c30d83d0f7642fb3af57)
   * [macOS Sierra で GNU gcc + MPI + OpenMP を使う.](https://qiita.com/syoyo/items/676d1e1c07aef26a49e2)
 * cmakeのコンパイルオプションが怪しい 動的ライブラリとかいうのを上手く使えるようにするオプションが無い．
-
 
 ## 参考にしたwebサイト
 
