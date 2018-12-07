@@ -13,3 +13,5 @@ description: Real World HTTPを読む勉強会
 * できないことをマスタリングTCP/IPで補完できそう
 * 4つ学ぶことを忘れないようにする
 
+第1回
+
