@@ -21,6 +21,7 @@
   * [Knowledge](yoshida/knowledge/README.md)
     * [Protocol/Radiocommunication/XaaS](yoshida/knowledge/purotokoruxaas.md)
     * [IoT](yoshida/knowledge/iot.md)
+* [Golang](golang.md)
 * [Kinno](kinno/README.md)
   * [Python](kinno/python/README.md)
     * [set up Python environment by venv](kinno/python/python_environment.md)
