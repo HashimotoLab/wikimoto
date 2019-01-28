@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [非公式飲み会](unofficial_drink_party.md)
 * [Seminar](zemi/README.md)
   * [python\_seminar](zemi/python_seminar.md)
   * [Graphillion\_seminar](zemi/graphillion_seminar.md)
@@ -21,8 +20,8 @@
     * [IFTTT](yoshida/study/ifttt.md)
   * [Knowledge](yoshida/knowledge/README.md)
     * [Protocol/Radiocommunication/XaaS](yoshida/knowledge/purotokoruxaas.md)
+    * [Golang](yoshida/knowledge/golang.md)
     * [IoT](yoshida/knowledge/iot.md)
-* [Golang](golang.md)
 * [Kinno](kinno/README.md)
   * [Python](kinno/python/README.md)
     * [set up Python environment by venv](kinno/python/python_environment.md)
