@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
+* [非公式飲み会](unofficial_drink_party.md)
 * [Seminar](zemi/README.md)
   * [python\_seminar](zemi/python_seminar.md)
   * [Graphillion\_seminar](zemi/graphillion_seminar.md)
